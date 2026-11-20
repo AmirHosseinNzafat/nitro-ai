@@ -1,0 +1,42 @@
+services:
+  llama:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    command:
+      - -hf
+      - Qwen/Qwen2.5-1.5B-Instruct-GGUF:Q4_K_M
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8081"
+      - -c
+      - "4096"
+      - -ngl
+      - "0"
+    volumes:
+      - nitro-model-cache:/root/.cache
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "bash", "-lc", "curl -fsS http://127.0.0.1:8081/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 20
+      start_period: 180s
+
+  gateway:
+    build:
+      context: ./backend
+    environment:
+      NITRO_LLM_URL: http://llama:8081
+      NITRO_CORS_ORIGINS: ${NITRO_CORS_ORIGINS:-*}
+      NITRO_RATE_PER_MINUTE: ${NITRO_RATE_PER_MINUTE:-12}
+      NITRO_RATE_PER_DAY: ${NITRO_RATE_PER_DAY:-200}
+      NITRO_MAX_OUTPUT_TOKENS: ${NITRO_MAX_OUTPUT_TOKENS:-512}
+    ports:
+      - "8080:8080"
+    depends_on:
+      llama:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  nitro-model-cache:
