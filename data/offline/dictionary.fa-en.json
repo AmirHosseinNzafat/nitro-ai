@@ -1,0 +1,530 @@
+{
+  "meta": {
+    "name": "NITRO Offline Persian-English Dictionary",
+    "version": "1.0",
+    "entries": 130,
+    "scope": "Curated starter glossary; not a complete general-language dictionary."
+  },
+  "entries": [
+    {
+      "word": "سلام",
+      "translation": "hello"
+    },
+    {
+      "word": "خداحافظ",
+      "translation": "goodbye"
+    },
+    {
+      "word": "لطفاً",
+      "translation": "please"
+    },
+    {
+      "word": "ممنون",
+      "translation": "thank you"
+    },
+    {
+      "word": "بله",
+      "translation": "yes"
+    },
+    {
+      "word": "خیر",
+      "translation": "no"
+    },
+    {
+      "word": "عشق",
+      "translation": "love"
+    },
+    {
+      "word": "عشق ابدی",
+      "translation": "eternal love"
+    },
+    {
+      "word": "دوستی",
+      "translation": "friendship"
+    },
+    {
+      "word": "خانواده",
+      "translation": "family"
+    },
+    {
+      "word": "خانه",
+      "translation": "house"
+    },
+    {
+      "word": "شهر",
+      "translation": "city"
+    },
+    {
+      "word": "جهان",
+      "translation": "world"
+    },
+    {
+      "word": "زمین",
+      "translation": "earth"
+    },
+    {
+      "word": "آسمان",
+      "translation": "sky"
+    },
+    {
+      "word": "آب",
+      "translation": "water"
+    },
+    {
+      "word": "آتش",
+      "translation": "fire"
+    },
+    {
+      "word": "هوا",
+      "translation": "air"
+    },
+    {
+      "word": "نور",
+      "translation": "light"
+    },
+    {
+      "word": "تاریکی",
+      "translation": "darkness"
+    },
+    {
+      "word": "زمان",
+      "translation": "time"
+    },
+    {
+      "word": "زندگی",
+      "translation": "life"
+    },
+    {
+      "word": "مرگ",
+      "translation": "death"
+    },
+    {
+      "word": "ترس",
+      "translation": "fear"
+    },
+    {
+      "word": "امید",
+      "translation": "hope"
+    },
+    {
+      "word": "خاطره",
+      "translation": "memory"
+    },
+    {
+      "word": "رویا",
+      "translation": "dream"
+    },
+    {
+      "word": "دانش",
+      "translation": "knowledge"
+    },
+    {
+      "word": "علم",
+      "translation": "science"
+    },
+    {
+      "word": "تاریخ",
+      "translation": "history"
+    },
+    {
+      "word": "زبان",
+      "translation": "language"
+    },
+    {
+      "word": "کتاب",
+      "translation": "book"
+    },
+    {
+      "word": "داستان",
+      "translation": "story"
+    },
+    {
+      "word": "تصویر",
+      "translation": "image"
+    },
+    {
+      "word": "عکس",
+      "translation": "photo"
+    },
+    {
+      "word": "رایانه",
+      "translation": "computer"
+    },
+    {
+      "word": "برنامه",
+      "translation": "program"
+    },
+    {
+      "word": "برنامه‌نویسی",
+      "translation": "programming"
+    },
+    {
+      "word": "پایتون",
+      "translation": "python"
+    },
+    {
+      "word": "هوش مصنوعی",
+      "translation": "artificial intelligence"
+    },
+    {
+      "word": "جست‌وجو",
+      "translation": "search"
+    },
+    {
+      "word": "منبع",
+      "translation": "source"
+    },
+    {
+      "word": "پاسخ",
+      "translation": "answer"
+    },
+    {
+      "word": "پرسش",
+      "translation": "question"
+    },
+    {
+      "word": "واژه",
+      "translation": "word"
+    },
+    {
+      "word": "معنی",
+      "translation": "meaning"
+    },
+    {
+      "word": "ترجمه",
+      "translation": "translation"
+    },
+    {
+      "word": "ساختن",
+      "translation": "create"
+    },
+    {
+      "word": "یادگیری",
+      "translation": "learning"
+    },
+    {
+      "word": "آفلاین",
+      "translation": "offline"
+    },
+    {
+      "word": "آنلاین",
+      "translation": "online"
+    },
+    {
+      "word": "سرعت",
+      "translation": "speed"
+    },
+    {
+      "word": "قوی",
+      "translation": "strong"
+    },
+    {
+      "word": "متوسط",
+      "translation": "medium"
+    },
+    {
+      "word": "کند",
+      "translation": "slow"
+    },
+    {
+      "word": "تصمیم",
+      "translation": "decision"
+    },
+    {
+      "word": "پروژه",
+      "translation": "project"
+    },
+    {
+      "word": "بازی",
+      "translation": "game"
+    },
+    {
+      "word": "شخصیت",
+      "translation": "character"
+    },
+    {
+      "word": "موجود",
+      "translation": "entity"
+    },
+    {
+      "word": "ناشناخته",
+      "translation": "unknown"
+    },
+    {
+      "word": "ماورایی",
+      "translation": "supernatural"
+    },
+    {
+      "word": "فراطبیعی",
+      "translation": "paranormal"
+    },
+    {
+      "word": "روح",
+      "translation": "ghost"
+    },
+    {
+      "word": "شبح",
+      "translation": "specter"
+    },
+    {
+      "word": "هیولا",
+      "translation": "monster"
+    },
+    {
+      "word": "افسانه",
+      "translation": "legend"
+    },
+    {
+      "word": "افسانه شهری",
+      "translation": "urban legend"
+    },
+    {
+      "word": "داستان ترسناک",
+      "translation": "horror story"
+    },
+    {
+      "word": "کریپی‌پاستا",
+      "translation": "creepypasta"
+    },
+    {
+      "word": "بک‌رومز",
+      "translation": "backrooms"
+    },
+    {
+      "word": "اسلندرمن",
+      "translation": "slender man"
+    },
+    {
+      "word": "غارنورد",
+      "translation": "caver"
+    },
+    {
+      "word": "پله",
+      "translation": "staircase"
+    },
+    {
+      "word": "اتاق",
+      "translation": "room"
+    },
+    {
+      "word": "راهرو",
+      "translation": "corridor"
+    },
+    {
+      "word": "سایه",
+      "translation": "shadow"
+    },
+    {
+      "word": "صدا",
+      "translation": "sound"
+    },
+    {
+      "word": "ناپدید شدن",
+      "translation": "disappearance"
+    },
+    {
+      "word": "تسخیر",
+      "translation": "possession"
+    },
+    {
+      "word": "ناهنجاری",
+      "translation": "anomaly"
+    },
+    {
+      "word": "مهار",
+      "translation": "containment"
+    },
+    {
+      "word": "بنیاد",
+      "translation": "foundation"
+    },
+    {
+      "word": "پرونده",
+      "translation": "file"
+    },
+    {
+      "word": "طبقه‌بندی",
+      "translation": "classification"
+    },
+    {
+      "word": "امن",
+      "translation": "safe"
+    },
+    {
+      "word": "یوکلید",
+      "translation": "euclid"
+    },
+    {
+      "word": "کیتر",
+      "translation": "keter"
+    },
+    {
+      "word": "شیء",
+      "translation": "object"
+    },
+    {
+      "word": "آزمایش",
+      "translation": "experiment"
+    },
+    {
+      "word": "نگهبان",
+      "translation": "guard"
+    },
+    {
+      "word": "امنیت",
+      "translation": "security"
+    },
+    {
+      "word": "خطر",
+      "translation": "danger"
+    },
+    {
+      "word": "فرار",
+      "translation": "escape"
+    },
+    {
+      "word": "بازسازی",
+      "translation": "regeneration"
+    },
+    {
+      "word": "جهش",
+      "translation": "mutation"
+    },
+    {
+      "word": "نامرئی",
+      "translation": "invisible"
+    },
+    {
+      "word": "بی‌نهایت",
+      "translation": "infinite"
+    },
+    {
+      "word": "واقعیت",
+      "translation": "reality"
+    },
+    {
+      "word": "تخیلی",
+      "translation": "fictional"
+    },
+    {
+      "word": "مستند",
+      "translation": "documentary"
+    },
+    {
+      "word": "نظریه",
+      "translation": "theory"
+    },
+    {
+      "word": "مدرک",
+      "translation": "evidence"
+    },
+    {
+      "word": "تحقیق",
+      "translation": "research"
+    },
+    {
+      "word": "دیکشنری",
+      "translation": "dictionary"
+    },
+    {
+      "word": "واژه‌نامه",
+      "translation": "glossary"
+    },
+    {
+      "word": "جمله",
+      "translation": "sentence"
+    },
+    {
+      "word": "کلمه به کلمه",
+      "translation": "word by word"
+    },
+    {
+      "word": "ترکیب",
+      "translation": "combination"
+    },
+    {
+      "word": "معادل",
+      "translation": "equivalent"
+    },
+    {
+      "word": "مکعب",
+      "translation": "cube"
+    },
+    {
+      "word": "بلاک",
+      "translation": "block"
+    },
+    {
+      "word": "چمن",
+      "translation": "grass"
+    },
+    {
+      "word": "سنگ",
+      "translation": "stone"
+    },
+    {
+      "word": "چوب",
+      "translation": "wood"
+    },
+    {
+      "word": "الماس",
+      "translation": "diamond"
+    },
+    {
+      "word": "آجر",
+      "translation": "brick"
+    },
+    {
+      "word": "شن",
+      "translation": "sand"
+    },
+    {
+      "word": "خاک",
+      "translation": "dirt"
+    },
+    {
+      "word": "جنگل",
+      "translation": "forest"
+    },
+    {
+      "word": "قلعه",
+      "translation": "castle"
+    },
+    {
+      "word": "سیاره",
+      "translation": "planet"
+    },
+    {
+      "word": "ربات",
+      "translation": "robot"
+    },
+    {
+      "word": "فضا",
+      "translation": "space"
+    },
+    {
+      "word": "رنگ",
+      "translation": "color"
+    },
+    {
+      "word": "سبز",
+      "translation": "green"
+    },
+    {
+      "word": "آبی",
+      "translation": "blue"
+    },
+    {
+      "word": "قرمز",
+      "translation": "red"
+    },
+    {
+      "word": "سیاه",
+      "translation": "black"
+    },
+    {
+      "word": "سفید",
+      "translation": "white"
+    }
+  ]
+}
