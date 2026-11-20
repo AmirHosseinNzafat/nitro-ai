@@ -51,7 +51,7 @@
 <script>
 const $=id=>document.getElementById(id);
 const state={chats:[],active:null,search:false,think:false,thinkMode:'medium',model:'NITRO Chat',imageModel:'NITRO Image',plan:'Free',page:'chat',images:[],files:[],projects:[]};
-const saved=localStorage.getItem('nitro-chat-v1');if(saved){try{Object.assign(state,JSON.parse(saved))}catch{}}
+const saved=localStorage.getItem('nitro-chat-v1');if(saved){try{Object.assign(state,JSON.parse(saved))}catch{}}if(state.model!=='NITRO Chat')state.model='NITRO Chat';if(!state.imageModel)state.imageModel='NITRO Image';
 function persist(){localStorage.setItem('nitro-chat-v1',JSON.stringify({...state,files:[]}));}
 const MEMORY_KEY='nitro-learning-v1';
 function readMemory(){try{return JSON.parse(localStorage.getItem(MEMORY_KEY)||'{"facts":[],"messageLog":[]}')}catch{return {facts:[],messageLog:[]}}}
@@ -88,6 +88,7 @@ async function doSearch(q,alreadyAdded=false){q=(q||'').trim();if(!q){toast('ع�
 function answerLocal(q){
  const t=q.toLowerCase();
  const learned=relevantMemory(q);
+ if(/چی (?:بهت )?یاد دادم|چه چیز(?:ی)? یاد(?:ت)? دادم|حافظه.?ات/.test(norm(q))){const all=readMemory().facts;return all.length?'چیزهایی که از تو یاد گرفته‌ام:\n'+all.map(x=>'• '+x.text).join('\n'):'هنوز دانسته‌ای به من یاد نداده‌ای. برای آموزش بنویس: «یاد بگیر که ...»'}
  const dict=dictionaryLookup(q);
  if(dict)return 'واژه‌نامه آفلاین · '+dict.direction+'\n'+dict.text+'\n\nتوجه: این واژه‌نامه منتخب است و معنی واژه‌ها به بافت جمله بستگی دارد.';
  const lore=loreLookup(q);
