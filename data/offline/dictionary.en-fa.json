@@ -1,8 +1,8 @@
 {
   "meta": {
     "name": "NITRO Offline English-Persian Dictionary",
-    "version": "1.0",
-    "entries": 130,
+    "version": "1.1",
+    "entries": 269,
     "scope": "Curated starter glossary; not a complete general-language dictionary."
   },
   "entries": [
@@ -525,6 +525,562 @@
     {
       "word": "white",
       "translation": "سفید"
+    },
+    {
+      "word": "circle",
+      "translation": "دایره"
+    },
+    {
+      "word": "square",
+      "translation": "مربع"
+    },
+    {
+      "word": "triangle",
+      "translation": "مثلث"
+    },
+    {
+      "word": "rectangle",
+      "translation": "مستطیل"
+    },
+    {
+      "word": "shape",
+      "translation": "شکل"
+    },
+    {
+      "word": "geometric shape",
+      "translation": "شکل هندسی"
+    },
+    {
+      "word": "girl",
+      "translation": "دختر"
+    },
+    {
+      "word": "boy",
+      "translation": "پسر"
+    },
+    {
+      "word": "woman",
+      "translation": "زن"
+    },
+    {
+      "word": "man",
+      "translation": "مرد"
+    },
+    {
+      "word": "child",
+      "translation": "کودک"
+    },
+    {
+      "word": "baby",
+      "translation": "نوزاد"
+    },
+    {
+      "word": "human",
+      "translation": "انسان"
+    },
+    {
+      "word": "face",
+      "translation": "چهره"
+    },
+    {
+      "word": "head",
+      "translation": "سر"
+    },
+    {
+      "word": "hair",
+      "translation": "مو"
+    },
+    {
+      "word": "eye",
+      "translation": "چشم"
+    },
+    {
+      "word": "nose",
+      "translation": "بینی"
+    },
+    {
+      "word": "mouth",
+      "translation": "دهان"
+    },
+    {
+      "word": "hand",
+      "translation": "دست"
+    },
+    {
+      "word": "foot",
+      "translation": "پا"
+    },
+    {
+      "word": "arm",
+      "translation": "بازو"
+    },
+    {
+      "word": "clothing",
+      "translation": "لباس"
+    },
+    {
+      "word": "shirt",
+      "translation": "پیراهن"
+    },
+    {
+      "word": "pants",
+      "translation": "شلوار"
+    },
+    {
+      "word": "shoes",
+      "translation": "کفش"
+    },
+    {
+      "word": "hat",
+      "translation": "کلاه"
+    },
+    {
+      "word": "smile",
+      "translation": "لبخند"
+    },
+    {
+      "word": "sad",
+      "translation": "غمگین"
+    },
+    {
+      "word": "happy",
+      "translation": "خوشحال"
+    },
+    {
+      "word": "angry",
+      "translation": "عصبانی"
+    },
+    {
+      "word": "scared",
+      "translation": "ترسیده"
+    },
+    {
+      "word": "beautiful",
+      "translation": "زیبا"
+    },
+    {
+      "word": "ugly",
+      "translation": "زشت"
+    },
+    {
+      "word": "tall",
+      "translation": "بلند"
+    },
+    {
+      "word": "short",
+      "translation": "کوتاه"
+    },
+    {
+      "word": "small",
+      "translation": "کوچک"
+    },
+    {
+      "word": "large",
+      "translation": "بزرگ"
+    },
+    {
+      "word": "round",
+      "translation": "گرد"
+    },
+    {
+      "word": "cubical",
+      "translation": "مکعبی"
+    },
+    {
+      "word": "three-dimensional",
+      "translation": "سه‌بعدی"
+    },
+    {
+      "word": "realistic",
+      "translation": "واقع‌گرایانه"
+    },
+    {
+      "word": "cartoon",
+      "translation": "کارتونی"
+    },
+    {
+      "word": "anime",
+      "translation": "انیمه"
+    },
+    {
+      "word": "pixelated",
+      "translation": "پیکسلی"
+    },
+    {
+      "word": "lighting",
+      "translation": "نورپردازی"
+    },
+    {
+      "word": "background",
+      "translation": "پس‌زمینه"
+    },
+    {
+      "word": "foreground",
+      "translation": "پیش‌زمینه"
+    },
+    {
+      "word": "landscape",
+      "translation": "منظره"
+    },
+    {
+      "word": "skyscraper",
+      "translation": "آسمان‌خراش"
+    },
+    {
+      "word": "mountain",
+      "translation": "کوه"
+    },
+    {
+      "word": "sea",
+      "translation": "دریا"
+    },
+    {
+      "word": "ocean",
+      "translation": "اقیانوس"
+    },
+    {
+      "word": "river",
+      "translation": "رودخانه"
+    },
+    {
+      "word": "lake",
+      "translation": "دریاچه"
+    },
+    {
+      "word": "cloud",
+      "translation": "ابر"
+    },
+    {
+      "word": "rain",
+      "translation": "باران"
+    },
+    {
+      "word": "snow",
+      "translation": "برف"
+    },
+    {
+      "word": "wind",
+      "translation": "باد"
+    },
+    {
+      "word": "sun",
+      "translation": "خورشید"
+    },
+    {
+      "word": "moon",
+      "translation": "ماه"
+    },
+    {
+      "word": "star",
+      "translation": "ستاره"
+    },
+    {
+      "word": "galaxy",
+      "translation": "کهکشان"
+    },
+    {
+      "word": "spaceship",
+      "translation": "فضاپیما"
+    },
+    {
+      "word": "rocket",
+      "translation": "موشک"
+    },
+    {
+      "word": "warrior",
+      "translation": "جنگجو"
+    },
+    {
+      "word": "knight",
+      "translation": "شوالیه"
+    },
+    {
+      "word": "soldier",
+      "translation": "سرباز"
+    },
+    {
+      "word": "doctor",
+      "translation": "پزشک"
+    },
+    {
+      "word": "scientist",
+      "translation": "دانشمند"
+    },
+    {
+      "word": "teacher",
+      "translation": "معلم"
+    },
+    {
+      "word": "student",
+      "translation": "دانش‌آموز"
+    },
+    {
+      "word": "artist",
+      "translation": "هنرمند"
+    },
+    {
+      "word": "friend",
+      "translation": "دوست"
+    },
+    {
+      "word": "enemy",
+      "translation": "دشمن"
+    },
+    {
+      "word": "hero",
+      "translation": "قهرمان"
+    },
+    {
+      "word": "villain",
+      "translation": "شرور"
+    },
+    {
+      "word": "alien",
+      "translation": "موجود فضایی"
+    },
+    {
+      "word": "dragon",
+      "translation": "اژدها"
+    },
+    {
+      "word": "wolf",
+      "translation": "گرگ"
+    },
+    {
+      "word": "cat",
+      "translation": "گربه"
+    },
+    {
+      "word": "dog",
+      "translation": "سگ"
+    },
+    {
+      "word": "bird",
+      "translation": "پرنده"
+    },
+    {
+      "word": "horse",
+      "translation": "اسب"
+    },
+    {
+      "word": "tree",
+      "translation": "درخت"
+    },
+    {
+      "word": "flower",
+      "translation": "گل"
+    },
+    {
+      "word": "leaf",
+      "translation": "برگ"
+    },
+    {
+      "word": "plant",
+      "translation": "گیاه"
+    },
+    {
+      "word": "home",
+      "translation": "خانه"
+    },
+    {
+      "word": "bedroom",
+      "translation": "اتاق خواب"
+    },
+    {
+      "word": "kitchen",
+      "translation": "آشپزخانه"
+    },
+    {
+      "word": "school",
+      "translation": "مدرسه"
+    },
+    {
+      "word": "hospital",
+      "translation": "بیمارستان"
+    },
+    {
+      "word": "village",
+      "translation": "روستا"
+    },
+    {
+      "word": "street",
+      "translation": "خیابان"
+    },
+    {
+      "word": "bridge",
+      "translation": "پل"
+    },
+    {
+      "word": "tower",
+      "translation": "برج"
+    },
+    {
+      "word": "building",
+      "translation": "ساختمان"
+    },
+    {
+      "word": "car",
+      "translation": "ماشین"
+    },
+    {
+      "word": "motorcycle",
+      "translation": "موتور"
+    },
+    {
+      "word": "train",
+      "translation": "قطار"
+    },
+    {
+      "word": "airplane",
+      "translation": "هواپیما"
+    },
+    {
+      "word": "ship",
+      "translation": "کشتی"
+    },
+    {
+      "word": "yellow",
+      "translation": "رنگ زرد"
+    },
+    {
+      "word": "purple",
+      "translation": "بنفش"
+    },
+    {
+      "word": "orange",
+      "translation": "نارنجی"
+    },
+    {
+      "word": "pink",
+      "translation": "صورتی"
+    },
+    {
+      "word": "brown",
+      "translation": "قهوه‌ای"
+    },
+    {
+      "word": "gray",
+      "translation": "خاکستری"
+    },
+    {
+      "word": "golden",
+      "translation": "طلایی"
+    },
+    {
+      "word": "silver",
+      "translation": "نقره‌ای"
+    },
+    {
+      "word": "transparent",
+      "translation": "شفاف"
+    },
+    {
+      "word": "dark",
+      "translation": "تیره"
+    },
+    {
+      "word": "bright",
+      "translation": "روشن"
+    },
+    {
+      "word": "magical",
+      "translation": "جادویی"
+    },
+    {
+      "word": "mysterious",
+      "translation": "مرموز"
+    },
+    {
+      "word": "scary",
+      "translation": "ترسناک"
+    },
+    {
+      "word": "horror",
+      "translation": "وحشت"
+    },
+    {
+      "word": "myth",
+      "translation": "افسانه"
+    },
+    {
+      "word": "secret",
+      "translation": "راز"
+    },
+    {
+      "word": "mystery",
+      "translation": "معما"
+    },
+    {
+      "word": "parallel universe",
+      "translation": "جهان موازی"
+    },
+    {
+      "word": "imagination",
+      "translation": "خیال"
+    },
+    {
+      "word": "creation",
+      "translation": "آفرینش"
+    },
+    {
+      "word": "design",
+      "translation": "طراحی"
+    },
+    {
+      "word": "drawing",
+      "translation": "نقاشی"
+    },
+    {
+      "word": "photography",
+      "translation": "عکاسی"
+    },
+    {
+      "word": "illustration",
+      "translation": "تصویرسازی"
+    },
+    {
+      "word": "model",
+      "translation": "مدل"
+    },
+    {
+      "word": "texture",
+      "translation": "بافت"
+    },
+    {
+      "word": "details",
+      "translation": "جزئیات"
+    },
+    {
+      "word": "quality",
+      "translation": "کیفیت"
+    },
+    {
+      "word": "resolution",
+      "translation": "وضوح"
+    },
+    {
+      "word": "angle",
+      "translation": "زاویه"
+    },
+    {
+      "word": "close-up",
+      "translation": "نمای نزدیک"
+    },
+    {
+      "word": "wide shot",
+      "translation": "نمای دور"
+    },
+    {
+      "word": "top view",
+      "translation": "نمای بالا"
+    },
+    {
+      "word": "side view",
+      "translation": "نمای جانبی"
+    },
+    {
+      "word": "front view",
+      "translation": "نمای روبه‌رو"
     }
   ]
 }
