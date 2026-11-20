@@ -1,5 +1,5 @@
 const CACHE='nitro-ai-offline-v5';
-const CORE=['./','./index.html','./data/offline/dictionary.fa-en.json','./data/offline/dictionary.en-fa.json','./data/offline/scp-lore.fa-en.json'];
+const CORE=['./','./index.html','./config.js','./data/offline/dictionary.fa-en.json','./data/offline/dictionary.en-fa.json','./data/offline/scp-lore.fa-en.json'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{
