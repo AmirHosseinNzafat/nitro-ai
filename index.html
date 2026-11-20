@@ -101,7 +101,30 @@ function answerLocal(q){
  const dict=dictionaryLookup(q);if(dict&&q.trim().split(/\s+/).length===1)return 'اگر منظورت معنی این واژه‌ست: '+dict.text+'\\nاگر منظورت چیز دیگه‌ایه، جمله‌ات رو کامل‌تر بگو.';
  return 'متوجه شدم. یکم بیشتر برام توضیح می‌دی دقیقاً چه نتیجه‌ای می‌خوای؟ می‌تونیم قدم‌به‌قدم با هم جلو بریم.';
 }
-async function send(){const input=$('prompt'),q=input.value.trim();if(!q)return;if(!state.active)newChat();const c=current();c.title=c.messages.length?c.title:q.slice(0,32);learnFromMessage(q);input.value='';input.style.height='36px';$('sendBtn').disabled=true;if(state.model==='NITRO Model'||isModelRequest(q)){state.model='NITRO Model';build3DModel(q,c);$('sendBtn').disabled=false;persist();return}if(state.model==='NITRO Image'||isImageRequest(q)){state.model='NITRO Image';createImageFromPrompt(q,'cinematic','landscape',true);$('sendBtn').disabled=false;persist();return}c.messages.push({role:'user',text:q});renderMessages();if(state.search){await doSearch(q,true);state.search=false;$('searchToggle').classList.remove('on');$('searchToggle').textContent='⌕ جست‌وجوی وب';$('sendBtn').disabled=false;return}const fact=q.match(/^(?:یاد بگیر(?: که)?|به خاطر بسپار(?: که)?)[：:\\s]+(.+)$/);const reply=fact?'این نکته رو یاد گرفتم و در حافظه محلی همین مرورگر ذخیره کردم:\\n'+fact[1]:answerLocal(q);c.messages.push({role:'assistant',text:reply});render();$('sendBtn').disabled=false;persist()}
+async function callNitroCore(messages){
+ let base=(window.NITRO_CONFIG&&window.NITRO_CONFIG.API_URL||'').trim();if(base.endsWith('/'))base=base.slice(0,-1);
+ if(!base)throw new Error('هسته آنلاین هنوز به سرور وصل نشده است. ابتدا سرور NITRO Core را راه‌اندازی و API_URL را در config.js تنظیم کن.');
+ const response=await fetch(base+'/v1/chat/completions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'nitro-qwen-1.5b',messages,temperature:.7,max_tokens:state.thinkMode==='strong'?512:state.thinkMode==='slow'?192:320})});
+ let data={};try{data=await response.json()}catch{}
+ if(!response.ok)throw new Error(data.error&&data.error.message||'ارتباط با NITRO Core ناموفق بود.');
+ const answer=data.choices&&data.choices[0]&&data.choices[0].message&&data.choices[0].message.content;
+ if(!answer)throw new Error('موتور NITRO پاسخ متنی معتبری برنگرداند.');
+ return answer.trim();
+}
+async function send(){
+ const input=$('prompt'),q=input.value.trim();if(!q)return;if(!state.active)newChat();const c=current();c.title=c.messages.length?c.title:q.slice(0,32);learnFromMessage(q);input.value='';input.style.height='36px';$('sendBtn').disabled=true;
+ if(state.model==='NITRO Model'||isModelRequest(q)){state.model='NITRO Model';build3DModel(q,c);$('sendBtn').disabled=false;persist();return}
+ if(state.model==='NITRO Image'||isImageRequest(q)){state.model='NITRO Image';createImageFromPrompt(q,'cinematic','landscape',true);$('sendBtn').disabled=false;persist();return}
+ c.messages.push({role:'user',text:q});renderMessages();
+ if(state.search){await doSearch(q,true);state.search=false;$('searchToggle').classList.remove('on');$('searchToggle').textContent='⌕ جست‌وجوی وب';$('sendBtn').disabled=false;return}
+ const fact=q.match(/^(?:یاد بگیر(?: که)?|به خاطر بسپار(?: که)?)[：:\s]+(.+)$/);
+ if(fact){c.messages.push({role:'assistant',text:'این نکته در حافظه محلی این مرورگر ذخیره شد. حافظه سروری و مشترک هنوز در مرحله بعدی توسعه قرار دارد.'});render();$('sendBtn').disabled=false;persist();return}
+ const context=c.messages.filter(m=>m.role==='user'||m.role==='assistant').slice(-16).map(m=>({role:m.role,content:String(m.text||'').slice(0,3000)}));
+ const messages=[{role:'system',content:'You are NITRO, an independent self-hosted AI assistant. Be helpful, thoughtful, honest, and conversational. Reply in Persian when the user writes Persian, and in the user language otherwise. Do not claim you used tools or know facts you do not know. If uncertain, say so clearly. You are NITRO, not ChatGPT.'},...context];
+ try{const reply=await callNitroCore(messages);c.messages.push({role:'assistant',text:reply})}
+ catch(err){c.messages.push({role:'assistant',text:'**اتصال به هسته NITRO برقرار نشد.**\n'+String(err.message||err)+'\n\nتا زمان راه‌اندازی سرور، گفت‌وگوی هوشمند آنلاین فعال نیست؛ پاسخ‌های محلی جایگزین مدل واقعی نمی‌شوند.'})}
+ render();$('sendBtn').disabled=false;persist();
+}
 $('sendBtn').onclick=send;$('prompt').oninput=e=>{$('sendBtn').disabled=!e.target.value.trim();e.target.style.height='36px';e.target.style.height=Math.min(e.target.scrollHeight,180)+'px'};$('prompt').onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send()}};
 $('newChat').onclick=newChat;document.querySelectorAll('.navbtn[data-page]').forEach(b=>b.onclick=()=>{if(b.id==='newChat')return;setPage(b.dataset.page)});document.querySelectorAll('[data-prompt]').forEach(b=>b.onclick=()=>{$('prompt').value=b.dataset.prompt;$('sendBtn').disabled=false;$('prompt').focus()});
 $('searchToggle').onclick=()=>{state.search=!state.search;$('searchToggle').classList.toggle('on',state.search);toast(state.search?'جست‌وجوی وب روشن شد':'جست‌وجوی وب خاموش شد')};const thinkModes=['slow','medium','strong'];const thinkLabels={slow:'کند',medium:'متوسط',strong:'قوی'};function updateThinkButton(){$('thinkToggle').textContent='◉ فکر '+thinkLabels[state.thinkMode];$('thinkToggle').classList.toggle('on',state.thinkMode!=='off')}$('thinkToggle').onclick=()=>{const i=thinkModes.indexOf(state.thinkMode);state.thinkMode=thinkModes[(i+1)%thinkModes.length];updateThinkButton();persist();toast('حالت فکر: '+thinkLabels[state.thinkMode])};updateThinkButton();
