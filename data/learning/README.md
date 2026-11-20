@@ -19,3 +19,12 @@ NITRO saves the fact in the browser profile and can recall it in later chats on 
 - Local matching is keyword-based. It is not model training and does not create a new language model.
 - Clearing browser site data can erase local memory unless it was exported first.
 - GitHub Pages is static hosting; it cannot write to arbitrary files on the user's PC.
+
+
+## Search memory and image prompts
+
+Successful Wikipedia searches now store a short source extract, title, query, URL, language, and timestamp in the local learning store. Later matching questions can retrieve that saved research note. Saved search notes remain linked to their source and should be checked for context and freshness; saving a result does not verify that it is true.
+
+To make an image, switch the top model selector to **NITRO Image** and type the description in the ordinary chat composer. You can also use direct prompts such as `یک دایره آبی بساز`, `یک دختر کارتونی بکش`, `draw a boy`, or `make a cube`. The current local Canvas renderer supports simple geometric forms, stylized people, and voxel blocks. It is a procedural illustration tool, not a generative image model.
+
+Switching between NITRO Chat and NITRO Image starts a new conversation so messages from different modes stay separate.
