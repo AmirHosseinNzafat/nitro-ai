@@ -53,6 +53,14 @@
 <div class="toast" id="toast"></div>
 <div id="modalRoot"></div>
 </div>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
 <script type="module">
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js';
@@ -208,7 +216,7 @@ async function runNitroAI(){
   else showToast(result.summary||'ربات فعلاً اقدام مناسبی پیدا نکرد');
  }catch(error){
   console.error('NITRO AI:',error);
-  showToast('ربات وصل نشد؛ ابتدا run.bat را اجرا کن');
+  showToast(location.protocol==='https:'?'برای ربات محلی، بازی را با run.bat از آدرس 127.0.0.1 اجرا کن':'ربات وصل نشد؛ ابتدا run.bat را اجرا کن');
  }finally{btn.disabled=false;btn.textContent=old}
 }
 
