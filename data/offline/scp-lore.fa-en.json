@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "name": "NITRO SCP and Creepypasta Offline Lore",
+    "version": "1.0",
+    "fiction_notice": "SCP and creepypasta are fictional works unless independently evidenced."
+  },
+  "scp": [
+    {
+      "id": "SCP-173",
+      "name_fa": "مجسمه",
+      "name_en": "The Sculpture",
+      "class": "Euclid",
+      "fa": "مجسمه‌ای متحرک که طبق داستان تا زمانی که مستقیماً دیده می‌شود حرکت نمی‌کند.",
+      "en": "An animate sculpture that cannot move while directly observed in the story.",
+      "url": "https://scp-wiki.wikidot.com/scp-173"
+    },
+    {
+      "id": "SCP-049",
+      "name_fa": "طاعون‌پزشک",
+      "name_en": "Plague Doctor",
+      "class": "Euclid",
+      "fa": "موجودی انسان‌نما که به بیماری‌ای موسوم به طاعون باور دارد و با لمس خود قربانیان را می‌کشد؛ سپس برای تبدیل آن‌ها به SCP-049-2 تلاش می‌کند.",
+      "en": "A humanoid that believes in a condition called the Pestilence. Its touch is lethal and it attempts to reanimate victims as SCP-049-2.",
+      "url": "https://scp-wiki.wikidot.com/scp-049"
+    },
+    {
+      "id": "SCP-682",
+      "name_fa": "خزنده‌ای که نابودکردنش دشوار است",
+      "name_en": "Hard-to-Destroy Reptile",
+      "class": "Keter",
+      "fa": "موجودی خزنده‌مانند و خصمانه با توانایی بازسازی و سازگاری با آسیب‌ها.",
+      "en": "A hostile reptilian entity with powerful regeneration and adaptation.",
+      "url": "https://scp-wiki.wikidot.com/scp-682"
+    },
+    {
+      "id": "SCP-096",
+      "name_fa": "مرد خجالتی",
+      "name_en": "The Shy Guy",
+      "class": "Euclid",
+      "fa": "موجودی انسان‌نما که دیدن چهره‌اش در داستان باعث تعقیب بیننده می‌شود.",
+      "en": "A humanoid whose face being seen triggers a pursuit response in the story.",
+      "url": "https://scp-wiki.wikidot.com/scp-096"
+    },
+    {
+      "id": "SCP-999",
+      "name_fa": "هیولای قلقلکی",
+      "name_en": "The Tickle Monster",
+      "class": "Safe",
+      "fa": "موجود ژلاتینی نارنجی و دوستانه که باعث شادی و آرامش می‌شود.",
+      "en": "A friendly orange gelatinous entity that induces happiness and calm.",
+      "url": "https://scp-wiki.wikidot.com/scp-999"
+    },
+    {
+      "id": "SCP-106",
+      "name_fa": "مرد پیر",
+      "name_en": "The Old Man",
+      "class": "Keter",
+      "fa": "موجودی خورنده که از سطوح عبور می‌کند و قربانیان را به فضایی جیبی می‌برد.",
+      "en": "A corrosive entity that passes through solid matter and takes victims into a pocket dimension.",
+      "url": "https://scp-wiki.wikidot.com/scp-106"
+    },
+    {
+      "id": "SCP-035",
+      "name_fa": "ماسک تسخیرگر",
+      "name_en": "Possessive Mask",
+      "class": "Keter",
+      "fa": "ماسکی نمایشی که مایع خورنده ترشح می‌کند و می‌تواند بر میزبان اثر ذهنی بگذارد.",
+      "en": "A theatrical mask that emits corrosive fluid and can exert mental influence over a wearer.",
+      "url": "https://scp-wiki.wikidot.com/scp-035"
+    },
+    {
+      "id": "SCP-087",
+      "name_fa": "پلکان",
+      "name_en": "The Stairwell",
+      "class": "Unclassified",
+      "fa": "راه‌پله‌ای تاریک و ظاهراً بی‌انتها با صداها و چهره‌ای ناشناس در گزارش‌های اکتشاف.",
+      "en": "An apparently endless dark stairwell with unsettling sounds and an unknown face in exploration logs.",
+      "url": "https://scp-wiki.wikidot.com/scp-087"
+    },
+    {
+      "id": "SCP-3008",
+      "name_fa": "فروشگاه بی‌نهایت",
+      "name_en": "A Perfectly Normal, Regular Old IKEA",
+      "class": "Euclid",
+      "fa": "فروشگاهی شبیه فروشگاه مبلمان که فضای داخلی آن به‌طور غیرعادی بی‌انتهاست.",
+      "en": "A furniture store whose interior space is anomalously endless.",
+      "url": "https://scp-wiki.wikidot.com/scp-3008"
+    },
+    {
+      "id": "SCP-914",
+      "name_fa": "دستگاه ساعت‌ساز",
+      "name_en": "The Clockworks",
+      "class": "Safe",
+      "fa": "دستگاهی بزرگ که اشیا را با تنظیمات مختلف تغییر می‌دهد.",
+      "en": "A large machine that transforms objects using several settings.",
+      "url": "https://scp-wiki.wikidot.com/scp-914"
+    },
+    {
+      "id": "SCP-055",
+      "name_fa": "چیزی که به خاطر نمی‌آید",
+      "name_en": "[unknown]",
+      "class": "Keter",
+      "fa": "موضوعی که ویژگی‌هایش به‌سختی به خاطر سپرده می‌شود؛ پرونده با ایده ضد‌ممیز شناخته می‌شود.",
+      "en": "An object whose properties are difficult to remember; famous as an anti-memetic concept.",
+      "url": "https://scp-wiki.wikidot.com/scp-055"
+    },
+    {
+      "id": "SCP-131",
+      "name_fa": "چشم‌های کوچک",
+      "name_en": "The Eye Pods",
+      "class": "Safe",
+      "fa": "دو موجود کوچک و دوستانه با یک چشم بزرگ که کنجکاو و مراقب‌اند.",
+      "en": "Two small, friendly one-eyed entities that are curious and observant.",
+      "url": "https://scp-wiki.wikidot.com/scp-131"
+    }
+  ],
+  "creepypasta": [
+    {
+      "name": "Slender Man",
+      "fa": "شخصیت خیالی اینترنتی بسیار بلند، لاغر و بی‌چهره که در سال ۲۰۰۹ در انجمن Something Awful شکل گرفت.",
+      "en": "A fictional, unnaturally tall, thin, faceless internet horror figure originating in a 2009 Something Awful forum contest.",
+      "url": "https://en.wikipedia.org/wiki/Slender_Man"
+    },
+    {
+      "name": "The Backrooms",
+      "fa": "جهانی داستانی از اتاق‌های بی‌پایان و محیط‌های خالی و ناآشنا که روایت اینترنتی آن در ۲۰۱۹ گسترش یافت.",
+      "en": "A fictional setting of endless uncanny rooms and spaces that spread through internet horror in 2019.",
+      "url": "https://en.wikipedia.org/wiki/The_Backrooms"
+    },
+    {
+      "name": "The Rake",
+      "fa": "موجود انسان‌نمای خزنده در داستان‌های ترسناک اینترنتی؛ روایت‌های مختلفی دارد و واقعی‌بودنش تأیید نشده است.",
+      "en": "A crawling humanoid in internet horror stories; versions vary and no evidence establishes it as real.",
+      "url": "https://en.wikipedia.org/wiki/Creepypasta"
+    },
+    {
+      "name": "Candle Cove",
+      "fa": "داستان کریپی‌پاستا درباره خاطره مبهم یک برنامه تلویزیونی عروسکی و ترسناک از دوران کودکی.",
+      "en": "A creepypasta about an unsettling puppet television show remembered from childhood.",
+      "url": "https://en.wikipedia.org/wiki/Creepypasta"
+    },
+    {
+      "name": "Ted the Caver",
+      "fa": "داستان اینترنتی ترسناک به شکل وبلاگ و گزارش اکتشاف یک غار.",
+      "en": "An internet horror story presented as a blog documenting a disturbing cave exploration.",
+      "url": "https://en.wikipedia.org/wiki/Creepypasta"
+    },
+    {
+      "name": "Polybius",
+      "fa": "افسانه شهری درباره دستگاه آرکید مرموز دهه ۱۹۸۰؛ مدرک معتبری برای وجود آن پیدا نشده است.",
+      "en": "An urban legend about a mysterious 1980s arcade machine; no reliable evidence confirms it existed.",
+      "url": "https://en.wikipedia.org/wiki/Polybius_(urban_legend)"
+    }
+  ]
+}
