@@ -1,156 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NITRO AI — دستیار هوشمند</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Mobina ♡</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
-:root{--bg:#212121;--side:#171717;--panel:#2f2f2f;--panel2:#262626;--line:#424242;--text:#ececec;--muted:#a1a1a1;--green:#10a37f;--hover:#2a2a2a;--blue:#6aa9ff}
-*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif}button,input,textarea{font:inherit}button{color:inherit;border:0;cursor:pointer;background:transparent}button:hover{background:var(--hover)}a{color:inherit}.app{height:100dvh;display:flex;overflow:hidden}.sidebar{width:260px;flex:none;background:var(--side);display:flex;flex-direction:column;padding:12px;transition:.2s;z-index:5}.side-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px}.logo{width:34px;height:34px;border-radius:12px;background:linear-gradient(145deg,#18c69a,#087c65);display:grid;place-items:center;color:white;font-size:19px;font-weight:900}.iconbtn{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:#bbb;font-size:18px}.navbtn{display:flex;align-items:center;gap:12px;padding:10px 11px;border-radius:10px;text-align:right;width:100%;font-size:13px;margin:2px 0}.navbtn .ico{font-size:17px;width:20px;text-align:center}.navbtn.active{background:#2a2a2a}.side-label{font-size:11px;color:#858585;padding:18px 10px 7px}.history{overflow:auto;flex:1}.history-item{display:flex;align-items:center;justify-content:space-between;padding:9px 10px;border-radius:9px;font-size:12px;color:#d2d2d2;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.history-item:hover,.history-item.active{background:#292929}.profile{border-top:1px solid #303030;padding-top:12px;display:flex;align-items:center;gap:10px}.avatar{width:34px;height:34px;border-radius:50%;background:#6654a3;display:grid;place-items:center;font-size:14px;font-weight:800}.profile-name{font-size:12px;font-weight:700}.profile-plan{font-size:10px;color:var(--muted)}.main{flex:1;min-width:0;display:flex;flex-direction:column;position:relative}.topbar{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;flex:none}.top-left,.top-right{display:flex;align-items:center;gap:8px}.model-select{font-size:16px;font-weight:800;padding:8px 11px;border-radius:10px}.model-select span{color:#aaa;font-size:11px;margin-right:6px}.upgrade{border:1px solid #555;border-radius:20px;padding:8px 13px;font-size:11px}.content{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column;align-items:center}.welcome{width:min(790px,calc(100% - 32px));margin:auto auto 0;padding:20px 0 22px;text-align:center}.welcome h1{font-size:29px;font-weight:600;margin:0 0 25px;letter-spacing:-.5px}.quick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 auto 18px;max-width:620px}.quick{transition:transform .16s ease,border-color .16s ease,background .16s ease}.quick:active,.navbtn:active,.tool-pill:active{transform:scale(.97)}.quick:hover{border-color:#666;background:#303030}.quick{border:1px solid #424242;border-radius:14px;text-align:right;padding:13px 15px;min-height:72px}.quick b{font-size:13px;display:block}.quick small{font-size:11px;color:var(--muted)}.composer-wrap{width:min(790px,calc(100% - 32px));padding:10px 0 24px;flex:none}.composer{background:#303030;border:1px solid #484848;border-radius:25px;padding:12px 14px 9px;box-shadow:0 8px 35px #0002}.composer textarea{width:100%;resize:none;max-height:180px;min-height:36px;border:0;outline:0;background:transparent;color:var(--text);font-size:14px;padding:7px 5px}.composer textarea::placeholder{color:#aaa}.composer-tools{display:flex;align-items:center;justify-content:space-between;gap:8px}.tool-group{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.tool-pill{font-size:11px;color:#ccc;padding:7px 10px;border-radius:18px;display:flex;gap:6px;align-items:center}.tool-pill.on{background:#164638;color:#8ce5c4}.send{width:34px;height:34px;border-radius:50%;background:#eee;color:#222;font-size:18px;font-weight:900}.send:disabled{opacity:.4;cursor:default}.footnote{text-align:center;color:#858585;font-size:10px;margin-top:9px}.messages{width:min(820px,calc(100% - 48px));margin:26px max(28px,calc((100% - 1120px)/2)) 8px auto;display:flex;flex-direction:column;gap:24px;align-self:flex-end}.composer-wrap{width:min(850px,calc(100% - 56px));margin-right:max(28px,calc((100% - 1120px)/2));margin-left:auto}.welcome{width:min(850px,calc(100% - 56px));margin:auto max(28px,calc((100% - 1120px)/2)) 0 auto}.msg.user{justify-content:flex-start}.msg-body img.generated-image{display:block;max-width:min(100%,520px);height:auto;border-radius:14px;border:1px solid #555;margin:10px 0}.image-result{background:#292929;border:1px solid #444;border-radius:14px;padding:10px;margin-top:10px}.image-result img{display:block;width:min(100%,520px);border-radius:10px}.image-result a{display:inline-block;margin-top:8px;color:#8bdcc4;font-size:12px}.msg{display:flex;gap:12px;align-items:flex-start}.msg.user{justify-content:flex-start}.msg-avatar{width:30px;height:30px;flex:none;border-radius:50%;display:grid;place-items:center;background:#3d3d3d;font-size:13px}.msg.assistant .msg-avatar{background:linear-gradient(145deg,#18c69a,#087c65)}.msg-body{min-width:0;max-width:calc(100% - 42px);font-size:14px;line-height:1.95;white-space:pre-wrap;overflow-wrap:anywhere}.msg.user .msg-body{background:#303030;border-radius:18px;padding:10px 15px}.msg-actions{display:flex;gap:6px;margin-top:7px}.msg-actions button{color:#999;padding:4px 7px;border-radius:7px;font-size:11px}.source{border:1px solid #4b4b4b;border-radius:10px;padding:9px 12px;margin:8px 0;font-size:11px;display:block;text-decoration:none;background:#292929}.source small{display:block;color:#aaa}.typing{color:#aaa;font-size:12px}.page{width:min(900px,calc(100% - 36px));margin:38px auto;}.page h1{font-size:25px;margin:0 0 8px}.page-sub{color:#aaa;font-size:13px;margin-bottom:25px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.card{border:1px solid #414141;background:#292929;border-radius:15px;padding:16px;min-height:120px}.card .card-icon{font-size:23px}.card h3{font-size:14px;margin:9px 0 4px}.card p{font-size:11px;color:#aaa;line-height:1.8;margin:0}.card button{margin-top:12px;border:1px solid #555;border-radius:9px;padding:7px 11px;font-size:11px}.modal-bg{position:fixed;inset:0;background:#0009;z-index:20;display:grid;place-items:center;padding:18px}.modal{width:min(520px,100%);background:#242424;border:1px solid #555;border-radius:18px;padding:20px;max-height:85vh;overflow:auto}.modal h2{font-size:17px;margin:0 0 12px}.modal p{font-size:12px;color:#aaa;line-height:1.9}.modal input,.modal textarea,.modal select{width:100%;background:#333;border:1px solid #555;border-radius:9px;padding:10px;color:white;margin:6px 0}.modal input{width:100%;background:#333;border:1px solid #555;border-radius:9px;padding:10px;color:white}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:15px}.modal-actions button{padding:8px 14px;border-radius:9px;background:#3a3a3a;font-size:12px}.modal-actions .primary{background:var(--green);color:white}.think-state{font-size:10px;color:#9de5cb;padding:4px 8px;border:1px solid #315e50;border-radius:20px}.image-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.image-grid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px}.hidden{display:none!important}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#333;border:1px solid #555;padding:9px 15px;border-radius:12px;font-size:11px;z-index:30}
-@media(max-width:760px){.messages,.composer-wrap,.welcome{width:calc(100% - 20px);margin:20px auto 10px}.sidebar{position:fixed;inset:0 auto 0 0;transform:translateX(-105%);width:275px;box-shadow:10px 0 50px #0008}.sidebar.open{transform:translateX(0)}.topbar{padding:0 10px}.welcome h1{font-size:23px}.quick-grid{grid-template-columns:1fr}.quick{min-height:58px}.composer-wrap{width:calc(100% - 20px);padding-bottom:14px}.messages{width:calc(100% - 24px)}.page{margin:25px auto}.upgrade{display:none}}
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap');
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;overflow-x:hidden;display:flex;justify-content:center;align-items:center;background:radial-gradient(ellipse at top,#58315e,#21152e 70%);color:white;font-family:Vazirmatn,sans-serif}
+.stars{position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 20% 20%,#fff,transparent),radial-gradient(2px 2px at 80% 40%,#fff,transparent),radial-gradient(2px 2px at 40% 75%,#fff,transparent);background-size:150px 150px;animation:twinkle 3s infinite alternate}
+@keyframes twinkle{to{opacity:.3}}
+.main{width:min(92%,400px);text-align:center;position:relative;z-index:2;padding:25px 0}
+.tag{color:#ffafd6;letter-spacing:4px;font-size:11px;direction:ltr}
+h1{font-size:39px;margin:12px 0;color:#ffc4e2;direction:ltr;text-shadow:0 0 8px #ff83c1,0 0 28px #ff43a5;animation:glow 2s infinite alternate}
+@keyframes glow{to{text-shadow:0 0 18px #ff8dc5,0 0 45px #ff43a5}}
+.desc{color:#e9c8df;font-size:13px}
+.cat-area{height:180px;position:relative;margin-top:20px}
+.cat{position:absolute;left:50%;bottom:5px;transform:translateX(-50%);width:130px;height:110px;animation:catwalk 2s ease-in-out infinite alternate}
+@keyframes catwalk{to{transform:translate(-50%,-8px)}}
+.body{position:absolute;width:100px;height:70px;background:#fff5f9;border-radius:50% 50% 42% 42%;bottom:0;left:15px;box-shadow:0 8px 20px #0003}
+.head{position:absolute;width:85px;height:75px;background:#fff8fc;border-radius:50%;left:22px;top:0;z-index:2;box-shadow:0 0 15px #ffd4e8}
+.ear{position:absolute;top:-9px;width:29px;height:37px;background:#fff8fc;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.ear.left{left:4px;transform:rotate(-15deg)}.ear.right{right:4px;transform:rotate(15deg)}
+.eye{position:absolute;top:35px;width:7px;height:10px;background:#493047;border-radius:50%}
+.eye.left{left:23px}.eye.right{right:23px}
+.nose{position:absolute;left:39px;top:47px;width:8px;height:6px;background:#ef87b5;border-radius:50%}
+.cheek{position:absolute;top:49px;width:13px;height:7px;background:#ffc0dc;border-radius:50%;opacity:.8}
+.cheek.left{left:10px}.cheek.right{right:10px}
+.flower{position:absolute;top:-19px;right:12px;font-size:30px;z-index:4;animation:flower 2s infinite alternate}
+@keyframes flower{to{transform:rotate(15deg)}}
+.tail{position:absolute;right:-5px;bottom:28px;width:35px;height:42px;border:9px solid #fff5f9;border-left:0;border-bottom:0;border-radius:50%;transform:rotate(25deg)}
+.envelope{width:260px;height:155px;position:relative;margin:10px auto;cursor:pointer;perspective:800px;filter:drop-shadow(0 12px 20px #0005)}
+.base{position:absolute;inset:0;background:#f5a6cb;border-radius:9px}
+.paper{position:absolute;left:5%;bottom:5px;width:90%;height:125px;background:#fff8fc;border-radius:7px;color:#9c4475;display:flex;justify-content:center;align-items:center;font-weight:900;font-size:19px;transition:transform .8s;z-index:2}
+.flap{position:absolute;top:0;left:0;width:0;height:0;border-left:130px solid transparent;border-right:130px solid transparent;border-top:95px solid #ffd0e5;transform-origin:top;transition:.7s;z-index:4}
+.front{position:absolute;inset:0;background:#f8b3d2;clip-path:polygon(0 0,50% 65%,100% 0,100% 100%,0 100%);z-index:3;border-radius:8px}
+.heart{position:absolute;top:55px;left:calc(50% - 18px);z-index:5;font-size:30px;transition:.5s}
+.envelope.open .flap{transform:rotateX(180deg);z-index:1}
+.envelope.open .paper{transform:translateY(-100px)}
+.envelope.open .heart{opacity:0;transform:scale(0)}
+.hint{font-size:12px;color:#ffd3e7;margin:25px}
+.message{display:none;margin-top:25px;padding:24px 15px;background:#ffffff13;backdrop-filter:blur(14px);border:1px solid #ffffff30;border-radius:22px;animation:appear .8s ease;position:relative;overflow:hidden}
+@keyframes appear{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.message h2{color:#ffc1df;font-size:20px}
+.big-text{font-size:23px;font-weight:900;margin:25px 0;color:#ffe3ef;text-shadow:0 0 15px #ff66ae}
+.buttons{position:relative;min-height:100px;display:flex;justify-content:center;align-items:center;gap:12px}
+button{font-family:inherit;border:0;border-radius:30px;padding:12px 23px;cursor:pointer;font-weight:bold}
+.yes{background:#ffc1df;color:#672c51;transition:transform .3s ease;transform:scale(var(--yes-scale,1));position:relative;z-index:3;white-space:nowrap}
+.no{background:#ffffff20;color:white;border:1px solid #ffffff40;position:relative;z-index:5;transition:left .25s ease,top .25s ease,transform .25s ease;white-space:nowrap}
+.hidden{display:none;margin-top:18px;color:#ffe0ef;line-height:2;font-size:14px;animation:appear .7s ease}
+.footer{font-size:11px;color:#d9b6d3;margin-top:22px}
+@keyframes rise{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
 </style>
 </head>
 <body>
-<div class="app">
-<aside class="sidebar" id="sidebar">
- <div class="side-top"><div class="brand"><div class="logo">N</div><span>NITRO AI</span></div><button class="iconbtn" id="collapseBtn" title="بستن منو">☰</button></div>
- <button class="navbtn active" data-page="chat" id="newChat"><span class="ico">＋</span> چت جدید</button>
- <button class="navbtn" data-page="search"><span class="ico">⌕</span> جست‌وجو</button>
- <button class="navbtn" data-page="explore"><span class="ico">▦</span> اکسپلور</button>
- <button class="navbtn" data-page="library"><span class="ico">▧</span> کتابخانه تصاویر</button>
- <button class="navbtn" data-page="projects"><span class="ico">▣</span> پروژه‌ها</button>
- <button class="navbtn" id="memoryBtn"><span class="ico">✧</span> حافظه نیترو</button>
- <div class="side-label">اخیر</div><div class="history" id="history"></div>
- <div class="profile"><div class="avatar">N</div><div style="flex:1"><div class="profile-name">کاربر نیترو</div><div class="profile-plan" id="planLabel">پلن Free</div></div><button class="iconbtn" id="profileBtn">•••</button></div>
-</aside>
-<main class="main">
- <header class="topbar"><div class="top-left"><button class="iconbtn" id="menuBtn">☰</button><button class="model-select" id="modelBtn">NITRO 1 <span>⌄</span></button><span class="think-state" id="offlineStatus">حافظه محلی فعال</span></div><div class="top-right"><button class="upgrade" id="planBtn">ارتقا به Plus ↗</button><button class="iconbtn" id="settingsBtn" title="تنظیمات">⚙</button></div></header>
- <section class="content" id="content">
-  <div class="welcome" id="welcome"><h1>امروز چطور می‌تونم کمکت کنم؟</h1><div class="quick-grid">
-   <button class="quick" data-prompt="برای پروژه‌ام یک برنامه حرفه‌ای طراحی کن"><b>✦ ایده‌پردازی و برنامه‌ریزی</b><small>ایده‌ها را به برنامه تبدیل کن</small></button>
-   <button class="quick" data-prompt="این کد را بررسی و اشکال‌زدایی کن"><b>⌘ برنامه‌نویسی</b><small>کدنویسی و رفع اشکال</small></button>
-   <button class="quick" data-prompt="یک موضوع را با جست‌وجوی وب بررسی کن"><b>⌕ تحقیق در وب</b><small>اطلاعات تازه همراه منابع</small></button>
-   <button class="quick" data-prompt="یک داستان جذاب و خلاقانه بنویس"><b>✎ نوشتن و خلاقیت</b><small>متن، داستان و سناریو</small></button>
+<div class="stars"></div>
+<div class="main">
+  <div class="tag">A LITTLE SURPRISE FOR YOU</div>
+  <h1>MOBINA ♡</h1>
+  <div class="desc">یه پستچی کوچولو یه چیزی برات آورده...</div>
+  <div class="cat-area"><div class="cat">
+    <div class="tail"></div><div class="body"></div>
+    <div class="head">
+      <div class="ear left"></div><div class="ear right"></div>
+      <div class="eye left"></div><div class="eye right"></div>
+      <div class="nose"></div><div class="cheek left"></div><div class="cheek right"></div>
+    </div>
+    <div class="flower">🌺</div>
   </div></div>
-  <div class="messages hidden" id="messages"></div>
-  <div class="page hidden" id="page"></div>
- </section>
- <footer class="composer-wrap" id="composerWrap">
-  <div class="composer"><textarea id="prompt" rows="1" placeholder="پیامی برای NITRO AI بنویس..."></textarea>
-   <div class="composer-tools"><div class="tool-group">
-    <button class="iconbtn" id="attachBtn" title="افزودن فایل">＋</button><input type="file" id="fileInput" hidden multiple>
-    <button class="tool-pill" id="searchToggle">⌕ جست‌وجوی وب</button>
-    <button class="tool-pill" id="thinkToggle">◉ فکرکردن</button>
-    
-   </div><button class="send" id="sendBtn" disabled>↑</button></div>
-  </div><div class="footnote">NITRO AI ممکن است اشتباه کند. اطلاعات مهم را بررسی کن.</div>
- </footer>
-</main>
+  <div class="envelope" id="env" onclick="openLetter()">
+    <div class="base"></div><div class="paper">برای مبینا 💌</div>
+    <div class="flap"></div><div class="front"></div><div class="heart">💗</div>
+  </div>
+  <div class="hint" id="hint">روی نامه بزن تا باز بشه ✨</div>
+  <div class="message" id="message">
+    <h2>خب خانم مبینا! 😌</h2>
+    <div class="big-text">یا منو می‌بخشی یا 😡😡😡😡</div>
+    <p style="font-size:13px;color:#f4d8e9">این نامه با نظارت مستقیم گربه پستچی ارسال شده. مسئولیت هرگونه قهر بیشتر بر عهده خودته! 😂</p>
+    <div class="buttons" id="buttons">
+      <button class="yes" id="yesBtn" onclick="accept()">باشه، بخشیدمت 💗</button>
+      <button class="no" id="noBtn" onpointerenter="escapeButton()" onclick="escapeButton()">نه! 😼</button>
+    </div>
+    <div class="hidden" id="secret">🎉 عملیات آشتی با موفقیت انجام شد!<br>قول می‌دم دفعه بعد پیام‌هات توی صف انتظار نمونه.<br>گربه پستچی هم از خوشحالی داره می‌رقصه! 🐱💞</div>
+  </div>
+  <div class="footer">MADE WITH ♡ JUST FOR MOBINA</div>
 </div>
-<div id="modalRoot"></div><div id="toast" class="toast hidden"></div>
-<script src="./config.js"></script>
 <script>
-const $=id=>document.getElementById(id);
-const state={chats:[],active:null,search:false,think:false,thinkMode:'medium',model:'NITRO Chat',imageModel:'NITRO Image',plan:'Free',page:'chat',images:[],files:[],projects:[]};
-const saved=localStorage.getItem('nitro-chat-v1');if(saved){try{Object.assign(state,JSON.parse(saved))}catch{}}if(!['NITRO Chat','NITRO Image','NITRO Model'].includes(state.model))state.model='NITRO Chat';if(!state.imageModel)state.imageModel='NITRO Image';
-function persist(){localStorage.setItem('nitro-chat-v1',JSON.stringify({...state,files:[]}));}
-const MEMORY_KEY='nitro-learning-v1';
-function readMemory(){try{return JSON.parse(localStorage.getItem(MEMORY_KEY)||'{"facts":[],"messageLog":[]}')}catch{return {facts:[],messageLog:[]}}}
-function writeMemory(m){localStorage.setItem(MEMORY_KEY,JSON.stringify(m));}
-function learnFromMessage(text){const m=readMemory();m.messageLog.push({text:String(text).slice(0,1200),at:Date.now()});if(m.messageLog.length>250)m.messageLog=m.messageLog.slice(-250);const match=String(text).match(/^(?:یاد بگیر(?: که)?|به خاطر بسپار(?: که)?|این را یاد بگیر(?: که)?)[：:\s]+(.+)$/i);if(match){const fact=match[1].trim();if(fact&&!m.facts.some(x=>norm(x.text)===norm(fact)))m.facts.push({text:fact,createdAt:new Date().toISOString(),source:'user'});writeMemory(m);return fact}writeMemory(m);return null}
-function relevantMemory(q){const m=readMemory(),n=norm(q);return m.facts.filter(x=>{const words=norm(x.text).split(' ').filter(w=>w.length>2);return words.some(w=>n.includes(w))}).slice(0,4)}
-function learnSearchResult(q,title,extract,url,lang){const m=readMemory();m.searches=m.searches||[];const clean=String(extract||'').slice(0,1800);const item={query:String(q).slice(0,200),title:String(title).slice(0,240),summary:clean,url,lang,learnedAt:new Date().toISOString()};const key=norm(item.title);m.searches=m.searches.filter(x=>norm(x.title)!==key);m.searches.unshift(item);m.searches=m.searches.slice(0,80);writeMemory(m)}
-function recalledSearch(q){const n=norm(q),terms=n.split(' ').filter(w=>w.length>2);const items=readMemory().searches||[];return items.map(x=>({x,score:terms.reduce((a,w)=>a+((norm(x.query+' '+x.title+' '+x.summary).includes(w))?1:0),0)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score)[0]?.x||null}
-function exportMemory(){const blob=new Blob([JSON.stringify(readMemory(),null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='nitro-memory.json';a.click();URL.revokeObjectURL(a.href);}
-function openMemory(){const m=readMemory();const facts=m.facts.map((x,i)=>'<div class="source"><b>'+escapeHtml(x.text)+'</b><small>دانسته کاربر · '+new Date(x.createdAt).toLocaleString('fa-IR')+'</small><button data-del-fact="'+i+'">حذف</button></div>').join('')||'<p>هنوز دانسته‌ای به حافظه اضافه نشده. بنویس: «یاد بگیر که SCP-999 موجودی دوستانه است».</p>';const searches=(m.searches||[]).map(x=>'<div class="source"><b>'+escapeHtml(x.title)+'</b><small>یادداشت جست‌وجو · '+escapeHtml(x.query)+' · '+new Date(x.learnedAt).toLocaleString('fa-IR')+'</small><a href="'+escapeHtml(x.url)+'" target="_blank" rel="noopener">مشاهده منبع</a><p>'+escapeHtml((x.summary||'').slice(0,260))+'</p></div>').join('')||'<p>هنوز جست‌وجویی ذخیره نشده است.</p>';openModal('حافظه و یادگیری NITRO AI','<p>دانسته‌های صریح و خلاصه جست‌وجوها در همین مرورگر ذخیره می‌شوند. خلاصه‌ها همراه لینک منبع و تاریخ نگهداری می‌شوند؛ ذخیره شدن به معنی تأیید قطعی محتوا نیست.</p><h3>دانسته‌های آموزش‌داده‌شده</h3><div>'+facts+'</div><h3>یادداشت‌های جست‌وجو</h3><div>'+searches+'</div><div class="modal-actions"><button id="exportMemory">خروجی JSON</button><button id="importMemory">ورود JSON</button><input id="memoryFile" type="file" accept="application/json" hidden></div>');$('exportMemory').onclick=exportMemory;$('importMemory').onclick=()=>$('memoryFile').click();$('memoryFile').onchange=async e=>{try{const obj=JSON.parse(await e.target.files[0].text());if(!Array.isArray(obj.facts))throw Error();writeMemory(obj);closeModal();toast('حافظه وارد شد')}catch{toast('فایل JSON معتبر نیست')}};$('modalRoot').querySelectorAll('[data-del-fact]').forEach(b=>b.onclick=()=>{const x=readMemory();x.facts.splice(+b.dataset.delFact,1);writeMemory(x);closeModal();openMemory()})}
-let offline={fa:[],en:[],scp:[],creepypasta:[]};
-async function loadOffline(){try{const [fa,en,lore]=await Promise.all([fetch('./data/offline/dictionary.fa-en.json').then(x=>x.json()),fetch('./data/offline/dictionary.en-fa.json').then(x=>x.json()),fetch('./data/offline/scp-lore.fa-en.json').then(x=>x.json())]);offline={fa:fa.entries||[],en:en.entries||[],scp:lore.scp||[],creepypasta:lore.creepypasta||[]};toast('دانش آفلاین نیترو بارگذاری شد · '+(offline.fa.length+offline.en.length)+' مدخل واژه‌نامه')}catch(e){console.warn('Offline pack unavailable',e)}}
-loadOffline();
-if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
-function norm(s){return String(s||'').toLocaleLowerCase().replace(/[\u200c\u200f]/g,' ').replace(/[ًٌٍَُِّْ]/g,'').replace(/[.,!?؟،؛:()[\]{}"']/g,' ').replace(/\s+/g,' ').trim()}
-function dictionaryLookup(q){const n=norm(q);if(!n)return null;const fa=offline.fa.find(x=>norm(x.word)===n);if(fa)return {kind:'exact',text:fa.word+' = '+fa.translation,direction:'فارسی به انگلیسی'};const en=offline.en.find(x=>norm(x.word)===n);if(en)return {kind:'exact',text:en.word+' = '+en.translation,direction:'English to Persian'};const words=n.split(' ').filter(Boolean);if(words.length<2)return null;const found=words.map(w=>{const a=offline.fa.find(x=>norm(x.word)===w);const b=offline.en.find(x=>norm(x.word)===w);return a?{word:w,translation:a.translation}:b?{word:w,translation:b.translation}:null}).filter(Boolean);return found.length>=2?{kind:'words',text:found.map(x=>x.word+' → '+x.translation).join('\n'),direction:'ترجمه کلمه‌به‌کلمه'}:null}
-function loreLookup(q){const n=norm(q);const hit=offline.scp.find(x=>n.includes(norm(x.id))||n.includes(norm(x.name_fa))||n.includes(norm(x.name_en)))||offline.creepypasta.find(x=>n.includes(norm(x.name)));return hit||null;}
-function toast(s){$('toast').textContent=s;$('toast').classList.remove('hidden');clearTimeout(window.tt);window.tt=setTimeout(()=>$('toast').classList.add('hidden'),2400)}
-function current(){return state.chats.find(c=>c.id===state.active)}
-function newChat(){const c={id:Date.now().toString()+Math.random().toString(36).slice(2,6),title:'چت جدید',messages:[],time:Date.now()};state.chats.unshift(c);state.active=c.id;state.page='chat';$('prompt').value='';$('sendBtn').disabled=true;render();persist();$('prompt').focus()}
-function renderHistory(){const el=$('history');el.innerHTML='';state.chats.slice(0,40).forEach(c=>{const b=document.createElement('button');b.className='history-item'+(c.id===state.active?' active':'');b.textContent=c.title;b.onclick=()=>{state.active=c.id;state.page='chat';render()};el.appendChild(b)})}
-function render(){renderHistory();document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===state.page));$('modelBtn').innerHTML=state.model+' <span>⌄</span>';$('planLabel').textContent='پلن '+state.plan;
- const chat=state.page==='chat';$('composerWrap').classList.toggle('hidden',!chat);$('welcome').classList.toggle('hidden',!chat||!!(current()?.messages.length));$('messages').classList.toggle('hidden',!chat||!(current()?.messages.length));$('page').classList.toggle('hidden',chat);
- if(chat){renderMessages()}else renderPage();persist()}
-function renderMessages(){const el=$('messages');el.innerHTML='';const c=current();if(!c||!c.messages.length)return;c.messages.forEach((m,i)=>{const row=document.createElement('div');row.className='msg '+(m.role==='user'?'user':'assistant');const av=document.createElement('div');av.className='msg-avatar';av.textContent=m.role==='user'?'ش':'N';const body=document.createElement('div');body.className='msg-body';body.textContent=m.text;if(m.image){const pic=document.createElement("img");pic.className="generated-image";pic.src=m.image;pic.alt="تصویر ساخته‌شده توسط NITRO AI";body.append(pic);const dl=document.createElement("a");dl.href=m.image;dl.download="nitro-ai-image.png";dl.textContent="⬇ ذخیره تصویر";dl.style.display="inline-block";dl.style.marginTop="8px";body.append(dl)}if(m.fileText){const dl=document.createElement('a');dl.href='data:text/plain;charset=utf-8,'+encodeURIComponent(m.fileText);dl.download=m.fileName||'nitro-model.obj';dl.textContent='⬇ دانلود مدل سه‌بعدی OBJ';dl.style.display='inline-block';dl.style.marginTop='10px';dl.style.padding='9px 13px';dl.style.border='1px solid #19b99a';dl.style.borderRadius='10px';body.append(dl)}row.append(av,body);if(m.sources?.length){m.sources.forEach(s=>{const a=document.createElement('a');a.className='source';a.href=s.url;a.target='_blank';a.rel='noopener';a.textContent=s.title;const sm=document.createElement('small');sm.textContent=s.snippet||s.url;a.append(sm);body.append(a)})}if(m.role==='assistant'){const actions=document.createElement('div');actions.className='msg-actions';[['کپی','⧉'],['جست‌وجوی بیشتر','⌕']].forEach(([label,icon])=>{const b=document.createElement('button');b.textContent=icon+' '+label;b.onclick=()=>label==='کپی'?navigator.clipboard?.writeText(m.text).then(()=>toast('کپی شد')):doSearch(c.messages[i-1]?.text||m.text);actions.append(b)});body.append(actions)}el.append(row)});$('content').scrollTop=$('content').scrollHeight}
-function setPage(p){state.page=p;render()}
-function escapeHtml(s){return String(s).replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]))}
-function renderPage(){const p=$('page');if(state.page==='explore'){p.innerHTML='<h1>اکسپلور NITRO AI</h1><div class="page-sub">ابزارها و قابلیت‌هایی که می‌توانی به گردش کارت اضافه کنی.</div><div class="cards">'+[['⌕','جست‌وجوی وب','جست‌وجو در منابع عمومی و دریافت پیوندها','جست‌وجو'],['▧','Image Library','مدیریت تصاویر ذخیره‌شده در همین مرورگر','بازکردن'],['⌘','برنامه‌نویسی','کمک برای ساخت، بررسی و اصلاح کد','شروع گفتگو'],['◉','فکرکردن','پاسخ‌گویی با مراحل تحلیل بیشتر','فعال‌سازی'],['✦','ایده‌پرداز','ایده‌سازی و برنامه‌ریزی پروژه‌ها','شروع گفتگو'],['⚙','پلاگین‌ها','اتصال ابزارهای جانبی در نسخه‌های آینده','مشاهده']].map((x,i)=>'<div class="card"><div class="card-icon">'+x[0]+'</div><h3>'+x[1]+'</h3><p>'+x[2]+'</p><button data-explore="'+i+'">'+x[3]+'</button></div>').join('')+'</div>';p.querySelectorAll('[data-explore]').forEach(b=>b.onclick=()=>{const i=+b.dataset.explore;if(i===0){state.search=true;setPage('chat');toast('جست‌وجوی وب روشن شد')}else if(i===1)setPage('library');else if(i===2){newChat();$('prompt').value='برای پروژه‌ام کد و ساختار حرفه‌ای پیشنهاد بده';$('sendBtn').disabled=false}else if(i===3){state.thinkMode='strong';updateThinkButton();setPage('chat');toast('حالت فکر قوی فعال شد')}else if(i===4){newChat();$('prompt').value='برای یک پروژه جدید ایده‌پردازی کن';$('sendBtn').disabled=false}else if(i===5)openModal('پلاگین‌ها','در این نسخه فهرست نمایشی است. اتصال واقعی هر سرویس به مجوز و API همان سرویس نیاز دارد.')} );}
- else if(state.page==='library'){p.innerHTML='<h1>کتابخانه تصاویر</h1><div class="page-sub">تصاویر انتخابی تو در همین مرورگر نگهداری می‌شوند.</div><button class="upgrade" id="addImages">＋ افزودن تصاویر</button><input id="libFiles" type="file" accept="image/*" multiple hidden><div class="image-grid" id="imageGrid" style="margin-top:18px"></div>';const input=$('libFiles');$('addImages').onclick=()=>input.click();input.onchange=()=>{[...input.files].forEach(file=>{const reader=new FileReader();reader.onload=()=>{state.images.push(reader.result);persist();renderPage()};reader.readAsDataURL(file)})};$('imageGrid').innerHTML=state.images.map((src,i)=>'<img src="'+src+'" alt="تصویر '+(i+1)+'">').join('')||'<p class="page-sub">هنوز تصویری اضافه نکرده‌ای.</p>'}
- else if(state.page==='projects'){p.innerHTML='<h1>پروژه‌ها</h1><div class="page-sub">فضاهای کاری ذخیره‌شده در همین مرورگر.</div><div class="cards"><div class="card"><div class="card-icon">▣</div><h3>پروژه جدید</h3><p>یک فضای تازه برای گفتگوها و فایل‌های مرتبط بساز.</p><button id="createProject">ساخت پروژه</button></div>'+state.projects.map((x,i)=>'<div class="card"><div class="card-icon">📁</div><h3>'+escapeHtml(x.name)+'</h3><p>ساخته‌شده در '+new Date(x.created).toLocaleDateString('fa-IR')+'</p><button data-project="'+i+'">بازکردن گفتگو</button></div>').join('')+'</div>'; $('createProject').onclick=()=>openModal('ساخت پروژه','<input id="projectName" placeholder="نام پروژه"><div class="modal-actions"><button class="primary" id="saveProject">ایجاد</button></div>',()=>{const n=$('projectName').value.trim();if(n){state.projects.push({name:n,created:Date.now()});persist();renderPage();toast('پروژه ساخته شد')}});p.querySelectorAll('[data-project]').forEach(b=>b.onclick=()=>{newChat();$('prompt').value='پروژه '+state.projects[+b.dataset.project].name+' را شروع کن';$('sendBtn').disabled=false})}
- else if(state.page==='search'){p.innerHTML='<h1>جست‌وجوی وب</h1><div class="page-sub">یک عبارت جست‌وجو کن تا نتایج و پیوندهای مرتبط را ببینی.</div><div class="composer"><input id="pageSearch" placeholder="چه چیزی را جست‌وجو کنیم؟" style="width:80%;background:transparent;border:0;color:white;padding:10px"><button class="send" id="pageSearchBtn">⌕</button></div><div id="searchResults"></div>';const go=()=>doSearch($('pageSearch').value);$('pageSearchBtn').onclick=go;$('pageSearch').onkeydown=e=>{if(e.key==='Enter')go()}}
+let noScale=1,yesScale=1,escapeCount=0;
+function openLetter(){
+  const env=document.getElementById('env');
+  if(env.classList.contains('open'))return;
+  env.classList.add('open');
+  document.getElementById('hint').style.display='none';
+  setTimeout(()=>{
+    document.getElementById('message').style.display='block';
+    hearts();
+  },850);
 }
-function closeModal(){$('modalRoot').innerHTML=''}
-function openModal(title,body,after){$('modalRoot').innerHTML='<div class="modal-bg"><div class="modal"><h2>'+title+'</h2>'+body+'<div class="modal-actions"><button id="modalClose">بستن</button></div></div></div>';$('modalClose').onclick=closeModal;if(after){const action=$('modalRoot').querySelector('.modal-actions .primary')||$('modalRoot').querySelector('#saveProject');if(action)action.onclick=()=>{after();closeModal()}}}
-async function doSearch(q,alreadyAdded=false){q=(q||'').trim();if(!q){toast('عبارت جست‌وجو را بنویس');return}state.page='chat';render();if(!state.active)newChat();const c=current();if(!alreadyAdded)c.messages.push({role:'user',text:'جست‌وجو کن: '+q});renderMessages();const local=dictionaryLookup(q);c.messages.push({role:'assistant',text:'در حال بررسی واژه‌نامه آفلاین و جست‌وجوی منبع...'});renderMessages();try{const searchApi=lang=>'https://'+lang+'.wikipedia.org/w/api.php?action=query&list=search&srsearch='+encodeURIComponent(q)+'&srlimit=1&format=json&origin=*';let lang='fa',data=await fetch(searchApi('fa')).then(r=>r.json());if(!(data.query?.search||[]).length){lang='en';data=await fetch(searchApi('en')).then(r=>r.json())}const hit=data.query?.search?.[0];if(!hit){c.messages[c.messages.length-1]={role:'assistant',text:'منبع قابل اتکایی برای این عبارت پیدا نکردم؛ نمی‌خواهم چیزی را حدس بزنم. عبارت دقیق‌تر یا نام موضوع را امتحان کن.'};renderMessages();persist();return}const pageApi='https://'+lang+'.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&exintro=1&pageids='+hit.pageid+'&format=json&origin=*';const page=await fetch(pageApi).then(r=>r.json());const pg=page.query?.pages?.[hit.pageid];const extract=(pg?.extract||'').replace(/\\s+/g,' ').trim();if(extract)learnSearchResult(q,hit.title,extract,'https://'+lang+'.wikipedia.org/?curid='+hit.pageid,lang);if(!extract){c.messages[c.messages.length-1]={role:'assistant',text:'صفحه پیدا شد، اما متن قابل استخراجی از منبع دریافت نشد. نمی‌توانم خلاصه‌ای بدون متن منبع بسازم.',sources:[{title:hit.title,url:'https://'+lang+'.wikipedia.org/?curid='+hit.pageid,snippet:'منبع اصلی'}]};renderMessages();persist();return}const sentences=extract.split(/(?<=[.!?؟])\s+/).filter(Boolean);const brief=(sentences.slice(0,3).join(' ').slice(0,850))+(extract.length>850?'…':'');const label=lang==='fa'?'خلاصه بر پایه متن منبع فارسی':'خلاصه بر پایه متن منبع انگلیسی';const wordPart=local?'\n\nواژه‌نامه آفلاین · '+local.direction+'\n'+local.text:'';c.messages[c.messages.length-1]={role:'assistant',text:label+' برای «'+hit.title+'»:\n\n'+brief+wordPart+'\n\nاین خلاصه از متن همان منبع استخراج شده و تحلیل مستقل مدل زبانی نیست.',sources:[{title:hit.title,url:'https://'+lang+'.wikipedia.org/?curid='+hit.pageid,snippet:'Wikipedia · '+lang.toUpperCase()}]};renderMessages();persist()}catch(e){c.messages[c.messages.length-1]={role:'assistant',text:local?'اتصال آنلاین برقرار نشد؛ اما این نتیجه از واژه‌نامه آفلاین پیدا شد:\n'+local.direction+'\n'+local.text:'جست‌وجو به منبع وصل نشد. اتصال اینترنت را بررسی کن. اگر اطلاعاتی در پایگاه دانش داخلی نیترو نباشد، پاسخ حدسی نمی‌دهم.'};renderMessages();persist()} }
-function answerLocal(q){
- const n=norm(q),t=q.toLowerCase(),learned=relevantMemory(q),prior=recalledSearch(q);
- if(/^(سلام|درود|hello|hi|hey|صبح بخیر|عصر بخیر|شب بخیر|خوبی|چه خبر)[!.؟\s]*$/i.test(q.trim()))return ['سلام! خوش اومدی. چه خبر؟ امروز قراره روی چی کار کنیم؟','سلام! من آماده‌ام؛ بگو ببینم چه چیزی توی ذهنته.','درود! خوشحالم برگشتی. امروز بریم سراغ ساختن یه چیز خفن؟'][Math.floor(Math.random()*3)];
- if(/^(ممنون|مرسی|تشکر|دمت گرم|thanks|thank you)[!.؟\s]*$/i.test(q.trim()))return 'قربونت! هر وقت خواستی ادامه می‌دیم.';
- if(/^(خوبی|چطوری|حالت چطوره)/.test(n))return 'خوبم، ممنون که پرسیدی! تو چطوری؟';
- if(/چی (?:بهت )?یاد دادم|چه چیز(?:ی)? یاد(?:ت)? دادم|حافظه.?ات/.test(n)){const all=readMemory().facts;return all.length?'این‌ها رو ازت به خاطر سپردم:\\n'+all.map(x=>'• '+x.text).join('\\n'):'هنوز چیزی به‌عنوان دانسته قطعی ذخیره نکردم.'}
- if(prior)return 'از یادداشت جست‌وجوی قبلی‌ام این مورد رو پیدا کردم:\\n'+prior.title+'\\n'+prior.summary+'\\nمنبع: '+prior.url;
- if(/چی هستی|نامت/.test(n))return 'من نیترو هستم؛ دستیار آزمایشی این پروژه. می‌تونم گفت‌وگوی ساده انجام بدم، از دانش محلی و یادداشت‌های جست‌وجو کمک بگیرم و در حالت‌های Image و Model خروجی گرافیکی و فایل سه‌بعدی بسازم.';
- if(/scp|اس سی پی|کریپی|creepypasta|ماورای|slender|backrooms|rake/.test(t)){const lore=loreLookup(q);if(lore){const en=/[a-z]/i.test(q)&&!/[آ-ی]/.test(q);return (lore.id?(lore.id+' · '+(en?lore.name_en:lore.name_fa)+' · کلاس '+lore.class+'\\n'):'')+(en?lore.en:lore.fa)+'\\nمنبع: '+lore.url+'\\nیادآوری: این آثار داستانی‌اند.'}return 'موضوع جالبیه. توی دانش آفلاین فعلی‌ام اطلاعات کافی ندارم؛ جست‌وجوی وب رو روشن کن تا از منبع واقعی بررسیش کنم.'}
- if(/پایتون|python/.test(n))return 'پایتون یک زبان برنامه‌نویسی چندمنظوره‌ست. برای شروع می‌تونیم با متغیرها، شرط‌ها و حلقه‌ها یک مثال عملی بنویسیم.';
- if(learned.length)return 'این نکته‌هایی که قبلاً بهم گفتی به این موضوع مربوط می‌شن:\\n'+learned.map(x=>'• '+x.text).join('\\n')+'\\nمی‌خوای بر اساس همین‌ها ادامه بدیم؟';
- const dict=dictionaryLookup(q);if(dict&&q.trim().split(/\s+/).length===1)return 'اگر منظورت معنی این واژه‌ست: '+dict.text+'\\nاگر منظورت چیز دیگه‌ایه، جمله‌ات رو کامل‌تر بگو.';
- return 'متوجه شدم. یکم بیشتر برام توضیح می‌دی دقیقاً چه نتیجه‌ای می‌خوای؟ می‌تونیم قدم‌به‌قدم با هم جلو بریم.';
+function escapeButton(){
+  const btn=document.getElementById('noBtn');
+  const yes=document.getElementById('yesBtn');
+  const area=document.getElementById('buttons');
+  if(escapeCount>=10){btn.style.display='none';return;}
+  escapeCount++;
+  noScale=Math.max(.28,noScale-.09);
+  btn.style.transform=`scale(${noScale})`;
+  yesScale=Math.min(1.9,yesScale+.12);
+  yes.style.transform=`scale(${yesScale})`;
+  btn.style.position='absolute';
+  const maxX=Math.max(0,area.clientWidth-btn.offsetWidth-10);
+  const maxY=Math.max(0,area.clientHeight-btn.offsetHeight-5);
+  btn.style.left=Math.random()*maxX+'px';
+  btn.style.top=Math.random()*maxY+'px';
+  const messages=['نه؟! اشتباه زدی 😂','این دکمه دستگیر نمی‌شه! 🏃','مبیناااا! 😭','دیگه داری زیاده‌روی می‌کنی!','فقط یه کلیک تا صلح فاصله داری 💗','من تسلیم نمی‌شم 😼','بخشیدن خیلی راحته ها!','کمک! دارم کوچیک می‌شم 😭','فقط دکمه صورتی رو بزن!','دیگه فرار نمی‌کنم... خداحافظ!'];
+  btn.textContent=messages[escapeCount-1];
+  if(escapeCount>=10)btn.textContent='من دیگه رفتم 😭';
 }
-async function callNitroCore(messages){
- let base=(window.NITRO_CONFIG&&window.NITRO_CONFIG.API_URL||'').trim();if(base.endsWith('/'))base=base.slice(0,-1);
- if(!base)throw new Error('هسته آنلاین هنوز به سرور وصل نشده است. ابتدا سرور NITRO Core را راه‌اندازی و API_URL را در config.js تنظیم کن.');
- const response=await fetch(base+'/v1/chat/completions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'nitro-qwen-1.5b',messages,temperature:.7,max_tokens:state.thinkMode==='strong'?512:state.thinkMode==='slow'?192:320})});
- let data={};try{data=await response.json()}catch{}
- if(!response.ok)throw new Error(data.error&&data.error.message||'ارتباط با NITRO Core ناموفق بود.');
- const answer=data.choices&&data.choices[0]&&data.choices[0].message&&data.choices[0].message.content;
- if(!answer)throw new Error('موتور NITRO پاسخ متنی معتبری برنگرداند.');
- return answer.trim();
+function accept(){
+  document.getElementById('secret').style.display='block';
+  document.getElementById('buttons').style.display='none';
+  hearts();
 }
-async function send(){
- const input=$('prompt'),q=input.value.trim();if(!q)return;if(!state.active)newChat();const c=current();c.title=c.messages.length?c.title:q.slice(0,32);learnFromMessage(q);input.value='';input.style.height='36px';$('sendBtn').disabled=true;
- if(state.model==='NITRO Model'||isModelRequest(q)){state.model='NITRO Model';build3DModel(q,c);$('sendBtn').disabled=false;persist();return}
- if(state.model==='NITRO Image'||isImageRequest(q)){state.model='NITRO Image';createImageFromPrompt(q,'cinematic','landscape',true);$('sendBtn').disabled=false;persist();return}
- c.messages.push({role:'user',text:q});renderMessages();
- if(state.search){await doSearch(q,true);state.search=false;$('searchToggle').classList.remove('on');$('searchToggle').textContent='⌕ جست‌وجوی وب';$('sendBtn').disabled=false;return}
- const fact=q.match(/^(?:یاد بگیر(?: که)?|به خاطر بسپار(?: که)?)[：:\s]+(.+)$/);
- if(fact){c.messages.push({role:'assistant',text:'این نکته در حافظه محلی این مرورگر ذخیره شد. حافظه سروری و مشترک هنوز در مرحله بعدی توسعه قرار دارد.'});render();$('sendBtn').disabled=false;persist();return}
- const context=c.messages.filter(m=>m.role==='user'||m.role==='assistant').slice(-16).map(m=>({role:m.role,content:String(m.text||'').slice(0,3000)}));
- const messages=[{role:'system',content:'You are NITRO, an independent self-hosted AI assistant. Be helpful, thoughtful, honest, and conversational. Reply in Persian when the user writes Persian, and in the user language otherwise. Do not claim you used tools or know facts you do not know. If uncertain, say so clearly. You are NITRO, not ChatGPT.'},...context];
- try{const reply=await callNitroCore(messages);c.messages.push({role:'assistant',text:reply})}
- catch(err){c.messages.push({role:'assistant',text:'**اتصال به هسته NITRO برقرار نشد.**\n'+String(err.message||err)+'\n\nتا زمان راه‌اندازی سرور، گفت‌وگوی هوشمند آنلاین فعال نیست؛ پاسخ‌های محلی جایگزین مدل واقعی نمی‌شوند.'})}
- render();$('sendBtn').disabled=false;persist();
+function hearts(){
+  const icons=['💗','💕','🌸','✨','💖'];
+  for(let i=0;i<25;i++){
+    setTimeout(()=>{
+      const el=document.createElement('div');
+      el.textContent=icons[Math.floor(Math.random()*icons.length)];
+      el.style.cssText=`position:fixed;left:${Math.random()*100}%;bottom:-30px;font-size:${18+Math.random()*18}px;pointer-events:none;z-index:20;animation:rise 4s linear forwards;`;
+      document.body.appendChild(el);
+      setTimeout(()=>el.remove(),4000);
+    },i*100);
+  }
 }
-$('sendBtn').onclick=send;$('prompt').oninput=e=>{$('sendBtn').disabled=!e.target.value.trim();e.target.style.height='36px';e.target.style.height=Math.min(e.target.scrollHeight,180)+'px'};$('prompt').onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send()}};
-$('newChat').onclick=newChat;document.querySelectorAll('.navbtn[data-page]').forEach(b=>b.onclick=()=>{if(b.id==='newChat')return;setPage(b.dataset.page)});document.querySelectorAll('[data-prompt]').forEach(b=>b.onclick=()=>{$('prompt').value=b.dataset.prompt;$('sendBtn').disabled=false;$('prompt').focus()});
-$('searchToggle').onclick=()=>{state.search=!state.search;$('searchToggle').classList.toggle('on',state.search);toast(state.search?'جست‌وجوی وب روشن شد':'جست‌وجوی وب خاموش شد')};const thinkModes=['slow','medium','strong'];const thinkLabels={slow:'کند',medium:'متوسط',strong:'قوی'};function updateThinkButton(){$('thinkToggle').textContent='◉ فکر '+thinkLabels[state.thinkMode];$('thinkToggle').classList.toggle('on',state.thinkMode!=='off')}$('thinkToggle').onclick=()=>{const i=thinkModes.indexOf(state.thinkMode);state.thinkMode=thinkModes[(i+1)%thinkModes.length];updateThinkButton();persist();toast('حالت فکر: '+thinkLabels[state.thinkMode])};updateThinkButton();
-$('attachBtn').onclick=()=>$('fileInput').click();$('fileInput').onchange=e=>{state.files=[...e.target.files].map(f=>f.name);toast('فایل انتخاب شد: '+state.files.join('، '))};function makeBlockArt(prompt,style='cinematic',ratio='landscape'){
- const c=document.createElement('canvas');c.width=ratio==='portrait'?720:1200;c.height=ratio==='portrait'?1000:800;const x=c.getContext('2d'),W=c.width,H=c.height,t=norm(prompt),rnd=(a,b)=>a+Math.random()*(b-a);
- const sky=x.createLinearGradient(0,0,0,H);sky.addColorStop(0,'#101a35');sky.addColorStop(.5,'#42566a');sky.addColorStop(1,'#172b2a');x.fillStyle=sky;x.fillRect(0,0,W,H);
- x.fillStyle='#f0dba9';x.globalAlpha=.9;x.beginPath();x.arc(W*.78,H*.19,58,0,7);x.fill();x.globalAlpha=1;
- for(let i=0;i<4;i++){x.fillStyle=['#293c50','#263e4b','#203a3b','#1c3434'][i];x.beginPath();x.moveTo(0,H*.62+i*15);for(let j=0;j<=8;j++)x.lineTo(j*W/8,H*(.36+i*.055)+Math.sin(j*1.7+i)*75);x.lineTo(W,H);x.closePath();x.fill()}
- const forest=/جنگل|forest|درخت|tree|گرگ|wolf|روباه|fox|شیطان|devil|فرشته|angel/.test(t);
- if(forest)for(let i=0;i<42;i++){const px=rnd(-20,W+20),base=H*rnd(.65,.98),h=rnd(100,300),w=h*.38;x.fillStyle=['#102d2b','#153b34','#1b493d','#203c38'][i%4];x.fillRect(px-w*.1,base-h*.28,w*.2,h*.32);x.beginPath();x.moveTo(px,base-h);x.lineTo(px-w,base-h*.28);x.lineTo(px+w,base-h*.28);x.closePath();x.fill();x.beginPath();x.moveTo(px,base-h*.72);x.lineTo(px-w*.82,base-h*.05);x.lineTo(px+w*.82,base-h*.05);x.closePath();x.fill()}
- const wolf=/گرگ|wolf/.test(t),fox=/روباه|fox/.test(t),devil=/شیطان|اهریمن|devil|demon/.test(t),angel=/فرشته|angel/.test(t),human=/انسان|آدم|شخصیت|مرد|زن|human|person/.test(t),animal=wolf||fox,cx=W*.5,ground=H*.84;
- if(animal){x.save();x.translate(cx,ground);x.fillStyle=fox?'#d87532':'#71808b';x.beginPath();x.ellipse(0,-105,190,82,-.04,0,7);x.fill();x.beginPath();x.ellipse(-118,-155,72,65,0,0,7);x.fill();x.beginPath();x.moveTo(-172,-160);x.lineTo(-235,-132);x.lineTo(-166,-119);x.fill();x.beginPath();x.moveTo(-160,-202);x.lineTo(-180,-290);x.lineTo(-113,-225);x.fill();x.beginPath();x.moveTo(-100,-205);x.lineTo(-70,-278);x.lineTo(-53,-190);x.fill();x.strokeStyle=fox?'#e58b3e':'#71818c';x.lineWidth=34;x.lineCap='round';x.beginPath();x.moveTo(155,-125);x.quadraticCurveTo(260,-195,300,-115);x.stroke();x.strokeStyle=fox?'#9f4b27':'#46545f';x.lineWidth=34;x.beginPath();[-125,-35,80,145].forEach((v,i)=>{x.moveTo(v,-70);x.lineTo(v+(i%2?10:-8),-8)});x.stroke();x.fillStyle='#f5d56a';x.beginPath();x.arc(-151,-165,10,0,7);x.fill();x.fillStyle='#10151c';x.beginPath();x.arc(-228,-135,9,0,7);x.fill();if(fox){x.fillStyle='#f5d2a0';x.beginPath();x.ellipse(-130,-130,48,22,0,0,7);x.fill()}x.restore()}
- else if(devil||angel||human){const skin=devil?'#8e4549':angel?'#e3d5b8':'#b88a70',cloth=devil?'#4b1728':angel?'#e4e9ef':'#253b58';x.fillStyle=cloth;x.beginPath();x.moveTo(cx-80,H*.43);x.quadraticCurveTo(cx,H*.36,cx+80,H*.43);x.lineTo(cx+120,ground);x.lineTo(cx-120,ground);x.fill();x.fillStyle=skin;x.beginPath();x.arc(cx,H*.31,58,0,7);x.fill();x.fillStyle='#211a20';x.beginPath();x.arc(cx,H*.29,58,Math.PI,2*Math.PI);x.fill();if(devil){x.fillStyle='#5a1727';[-1,1].forEach(d=>{x.beginPath();x.moveTo(cx+d*35,H*.28);x.lineTo(cx+d*85,H*.12);x.lineTo(cx+d*57,H*.34);x.fill()})}if(angel){[-1,1].forEach(d=>{x.fillStyle='#e7edf5';x.beginPath();x.moveTo(cx+d*45,H*.48);x.quadraticCurveTo(cx+d*270,H*.12,cx+d*330,H*.45);x.quadraticCurveTo(cx+d*190,H*.4,cx+d*60,H*.64);x.fill()});x.strokeStyle='#f5d98b';x.lineWidth=8;x.beginPath();x.ellipse(cx,H*.18,90,18,0,0,7);x.stroke()}x.fillStyle='#f2d36b';x.beginPath();x.arc(cx-20,H*.31,7,0,7);x.arc(cx+20,H*.31,7,0,7);x.fill()}
- for(let i=0;i<130;i++){x.globalAlpha=rnd(.15,.65);x.fillStyle=i%3?'#d5e8e4':'#f4c98b';x.beginPath();x.arc(rnd(0,W),rnd(0,H),rnd(1,3),0,7);x.fill()}x.globalAlpha=1;const v=x.createRadialGradient(W/2,H/2,H*.15,W/2,H/2,H*.75);v.addColorStop(0,'#0000');v.addColorStop(1,'#050914aa');x.fillStyle=v;x.fillRect(0,0,W,H);x.fillStyle='#fff';x.font='700 23px sans-serif';x.fillText('NITRO IMAGE',34,48);return c.toDataURL('image/png')
-}
-function makeCubeOBJ(){return '# NITRO Model - Wavefront OBJ\no NITRO_Cube\nv -1 -1 -1\nv 1 -1 -1\nv 1 1 -1\nv -1 1 -1\nv -1 -1 1\nv 1 -1 1\nv 1 1 1\nv -1 1 1\nf 1 4 3 2\nf 5 6 7 8\nf 1 2 6 5\nf 2 3 7 6\nf 3 4 8 7\nf 4 1 5 8\n'}
-function build3DModel(prompt,chat){const obj=makeCubeOBJ(),preview=makeBlockArt('مکعب سه‌بعدی نیترو','cinematic','landscape');chat.messages.push({role:'user',text:prompt});chat.messages.push({role:'assistant',text:'مدل هندسی مکعب ساخته شد. فایل OBJ قابل ویرایش است و می‌توانی آن را در Blender، Unity یا نرم‌افزارهای سه‌بعدی وارد کنی. پیش‌نمایش چت تصویری است؛ فایل دانلودی هندسه واقعی رأس‌ها و سطوح را دارد.',image:preview,fileText:obj,fileName:'nitro-cube.obj'});state.images.unshift(preview);render();persist();toast('مدل سه‌بعدی آماده دانلود است')}
-function createImageFromPrompt(prompt,style='voxel',ratio='square',recordUser=true){const target=current()||(()=>{newChat();return current()})();if(recordUser)target.messages.push({role:'user',text:prompt});const src=makeBlockArt(prompt,style,ratio);target.messages.push({role:'assistant',text:'NITRO Image · تصویر بر اساس توضیحت ساخته شد. این نسخه از شکل‌سازی Canvas استفاده می‌کند.',image:src});state.images.unshift(src);render();persist();toast('تصویر ساخته و به کتابخانه اضافه شد')}
-function isImageRequest(q){return /(?:بساز|ایجاد کن|طراحی کن|نقاشی کن|تصویر|عکس|draw|generate|create|make|نشان بده)/i.test(q)&&/(?:تصویر|عکس|دایره|مربع|مثلث|مکعب|بلاک|دختر|پسر|زن|مرد|آدم|انسان|شخصیت|درخت|خانه|سیاره|گرگ|روباه|شیطان|اهریمن|فرشته|جنگل|wolf|fox|devil|demon|angel|forest|image|picture|circle|square|triangle|cube|block|girl|boy|woman|man|person|character|tree|house|planet)/i.test(q)}
-function isModelRequest(q){return /(?:مدل سه.?بعدی|مکعب سه.?بعدی|3d|obj)/i.test(q)}
-$('modelBtn').onclick=()=>openModal('انتخاب مدل','<p>با تغییر مدل، یک گفتگوی تازه باز می‌شود.</p><div class="card"><h3>NITRO Chat</h3><p>گفتگو و پاسخ متنی</p><button id="chooseChatModel">انتخاب NITRO Chat</button></div><div class="card"><h3>NITRO Image</h3><p>ساخت تصویر از طریق متن همین چت</p><button id="chooseImageModel">انتخاب NITRO Image</button></div><div class="card"><h3>NITRO Model</h3><p>ساخت مدل سه‌بعدی OBJ قابل دانلود و ویرایش</p><button id="chooseModel3D">انتخاب NITRO Model</button></div>');$('planBtn').onclick=()=>openModal('پلن‌های NITRO AI','<div class="cards"><div class="card"><h3>Free</h3><p>دسترسی پایه به گفتگو و جست‌وجو</p><button id="chooseFree">انتخاب Free</button></div><div class="card"><h3>Plus</h3><p>طرح نمایشی رابط کاربری؛ پرداخت و اشتراک واقعی فعال نیست.</p><button id="choosePlus">نمایش Plus</button></div></div>');$('settingsBtn').onclick=()=>openModal('تنظیمات','<p>زبان: فارسی<br>ذخیره گفتگوها: حافظه محلی مرورگر<br>نسخه: NITRO AI UI 1.0</p>');$('profileBtn').onclick=()=>$('planBtn').click();$('collapseBtn').onclick=()=>$('sidebar').classList.remove('open');$('menuBtn').onclick=()=>$('sidebar').classList.toggle('open');
-$('planBtn').addEventListener('click',()=>{setTimeout(()=>{const a=$('chooseFree'),b=$('choosePlus');if(a)a.onclick=()=>{state.plan='Free';$('planLabel').textContent='پلن Free';$('modalRoot').innerHTML='';persist()};if(b)b.onclick=()=>{state.plan='Plus (نمایشی)';$('planLabel').textContent='پلن Plus (نمایشی)';$('modalRoot').innerHTML='';toast('این فقط نمایش ظاهری پلن است')}} ,0)});
-function openSettingsProfile(){}
-$('memoryBtn').onclick=openMemory;
-$('modelBtn').addEventListener('click',()=>setTimeout(()=>{const choose=(id,model)=>{const b=$(id);if(b)b.onclick=()=>{const changed=state.model!==model;state.model=model;$('modalRoot').innerHTML='';render();if(changed)newChat();toast('مدل '+model+' انتخاب شد · گفتگوی جدید آماده است')};};choose('chooseChatModel','NITRO Chat');choose('chooseImageModel','NITRO Image');choose('chooseModel3D','NITRO Model')},0));
-if(!state.chats.length)newChat();else{state.active=state.active||state.chats[0].id;render()}
 </script>
-</body></html>
+</body>
+</html>
